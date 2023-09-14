@@ -1,0 +1,24 @@
+{
+  "name": "testapp002",
+  "version": "0.1.0",
+  "bin": {
+    "testapp002": "bin/testapp002.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest",
+    "synth": "cdk synth --quiet",
+    "synth-no-ipc": "node bin/testapp002.no-ipc.js synth --quiet",
+    "hotswap": "cdk deploy --hotswap-fallback --method=direct",
+    "hotswap-no-ipc": "node bin/testapp002.no-ipc.js deploy --hotswap-fallback --method=direct"
+  },
+  "devDependencies": {
+    "aws-cdk": "file:../../packages/aws-cdk",
+    "jest": "^29.6.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "file:../../packages/aws-cdk-lib",
+    "constructs": "^10.0.0"
+  }
+}

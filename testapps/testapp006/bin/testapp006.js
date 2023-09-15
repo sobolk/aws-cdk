@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const globalStartTime = new Date().getTime();
 const requireStartTime = new Date().getTime();
-const App = require('../node_modules/aws-cdk-lib/core/lib/app.js').App;
+const App = require('@aws-cdk/core').App;
 const { Testapp006Stack } = require('../lib/testapp006-stack');
 const requireElapsedTime = new Date().getTime() - requireStartTime;
 console.log('\n✨  Testapp006 all require(): %ss\n', requireElapsedTime/1000);

@@ -10,6 +10,7 @@
     "test": "jest",
     "cdk": "cdk",
     "synth": "cdk synth --quiet",
+    "synth-debug": "ts-node bin/testapp001.ts",
     "synth-no-ipc": "ts-node bin/testapp001.no-ipc.ts synth --quiet",
     "synth-extra-ipc": "ts-node bin/testapp001.extra-ipc.ts synth --quiet",
     "synth-extra-no-ipc": "ts-node bin/testapp001.extra-no-ipc.ts synth --quiet",

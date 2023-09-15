@@ -1,9 +1,8 @@
 const requireStartTime = new Date().getTime();
-const { Stack } = require('../node_modules/aws-cdk-lib/core/lib/stack.js');
-const Bucket = require('../node_modules/aws-cdk-lib/aws-s3/lib/bucket.js').Bucket;
-const lambda = require('../node_modules/aws-cdk-lib/aws-lambda');
-const BucketDeployment = require('../node_modules/aws-cdk-lib/aws-s3-deployment/lib/bucket-deployment.js').BucketDeployment;
-const Source = require('../node_modules/aws-cdk-lib/aws-s3-deployment/lib/source.js').Source;
+const { Stack } = require('@aws-cdk/core');
+const Bucket = require('@aws-cdk/aws-s3').Bucket;
+const lambda = require('@aws-cdk/aws-lambda');
+const { BucketDeployment, Source } = require('@aws-cdk/aws-s3-deployment');
 const requireElapsedTime = new Date().getTime() - requireStartTime;
 console.log('\n✨  Testapp006Stack all require(): %ss\n', requireElapsedTime/1000);
 
@@ -28,19 +27,19 @@ class Testapp006Stack extends Stack {
     new lambda.Function(this, 'lambda1', {
       code: lambda.Code.fromAsset('./lambda1'),
       handler: "index1.handler",
-      runtime: lambda.Runtime.NODEJS_18_X
+      runtime: lambda.Runtime.NODEJS_16_X
     });
 
     new lambda.Function(this, 'lambda2', {
       code: lambda.Code.fromAsset('./lambda2'),
       handler: "index2.handler",
-      runtime: lambda.Runtime.NODEJS_18_X
+      runtime: lambda.Runtime.NODEJS_16_X
     });
 
     new lambda.Function(this, 'lambda3', {
       code: lambda.Code.fromAsset('./lambda3'),
       handler: "index3.handler",
-      runtime: lambda.Runtime.NODEJS_18_X
+      runtime: lambda.Runtime.NODEJS_16_X
     });
 
     const elapsedTime = new Date().getTime() - startTime;

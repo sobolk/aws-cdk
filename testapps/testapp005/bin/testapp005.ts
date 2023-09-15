@@ -6,9 +6,9 @@ import 'source-map-support/register';
 let singleImportElapsedTime = new Date().getTime() - singleImportStartTime;
 console.log('\n✨  Testapp005 import \'source-map-support/register\': %ss\n', singleImportElapsedTime/1000);
 singleImportStartTime = new Date().getTime();
-import { App } from '../../../packages/aws-cdk-lib/core/lib/app'
+import { App } from '@aws-cdk/core'
 singleImportElapsedTime = new Date().getTime() - singleImportStartTime;
-console.log('\n✨  Testapp005 import { App } from \'../../../packages/aws-cdk-lib/core/lib/app.ts\': %ss\n', singleImportElapsedTime/1000);
+console.log('\n✨  Testapp005 import { App } from \'@aws-cdk/core\': %ss\n', singleImportElapsedTime/1000);
 singleImportStartTime = new Date().getTime();
 import { Testapp005Stack } from '../lib/testapp005-stack';
 singleImportElapsedTime = new Date().getTime() - singleImportStartTime;

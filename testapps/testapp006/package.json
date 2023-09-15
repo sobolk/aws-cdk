@@ -10,20 +10,17 @@
     "test": "jest",
     "synth-debug": "node bin/testapp006.js",
     "synth": "cdk synth --quiet",
-    "synth-no-ipc": "node bin/testapp006.no-ipc.js synth --quiet",
-    "synth-extra-ipc": "node bin/testapp006.extra-ipc.js synth --quiet",
-    "synth-extra-no-ipc": "node bin/testapp006.extra-no-ipc.js synth --quiet",
-    "hotswap": "cdk deploy --hotswap-fallback --method=direct",
-    "hotswap-no-ipc": "node bin/testapp006.no-ipc.js deploy --hotswap-fallback --method=direct",
-    "hotswap-extra-ipc": "node bin/testapp006.extra-ipc.js deploy --hotswap-fallback --method=direct",
-    "hotswap-extra-no-ipc": "node bin/testapp006.extra-no-ipc.js deploy --hotswap-fallback --method=direct"
+    "hotswap": "cdk deploy --hotswap-fallback --method=direct"
   },
   "devDependencies": {
-    "aws-cdk": "2.93.0",
+    "aws-cdk": "1.204.0",
     "jest": "^29.6.3"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.93.0",
-    "constructs": "^10.0.0"
+    "@aws-cdk/core": "1.204.0",
+    "@aws-cdk/aws-lambda": "1.204.0",
+    "@aws-cdk/aws-s3": "1.204.0",
+    "@aws-cdk/aws-s3-deployment": "1.204.0",
+    "constructs": "^3.3.69"
   }
 }

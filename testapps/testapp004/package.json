@@ -9,6 +9,7 @@
     "cdk": "cdk",
     "test": "jest",
     "synth": "cdk synth --quiet",
+    "synth-debug": "node bin/testapp004.js",
     "hotswap": "cdk deploy --hotswap-fallback --method=direct"
   },
   "devDependencies": {

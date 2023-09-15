@@ -10,6 +10,7 @@
     "test": "jest",
     "cdk": "cdk",
     "synth": "cdk synth --quiet",
+    "synth-debug": "ts-node bin/testapp003.ts",
     "hotswap": "cdk deploy --hotswap-fallback --method=direct"
   },
   "devDependencies": {

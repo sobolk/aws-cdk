@@ -5,11 +5,11 @@
 
 | Measurement | Mean and Standard Deviation |
 | ----------- | --------------------------- |
-| ✨  Testapp004Stack all require() | 0.072&pm;0.015 |
-| ✨  Testapp004 all require() | 0.205&pm;0.041 |
-| ✨  Testapp004Stack ctor minus super() | 0.014&pm;0.002 |
-| ✨  Testapp004 total processing time | 0.253&pm;0.044 |
-| ✨  Testapp004 processing time no imports | 0.048&pm;0.003 |
-| real | 0.887&pm;0.074 |
-| user | 0.866&pm;0.024 |
-| sys | 0.119&pm;0.013 |
+| ✨  Testapp004Stack all require() | 0.076&pm;0.014s |
+| ✨  Testapp004 all require() | 0.208&pm;0.032s |
+| ✨  Testapp004Stack ctor minus super() | 0.014&pm;0.001s |
+| ✨  Testapp004 total processing time | 0.259&pm;0.034s |
+| ✨  Testapp004 processing time no imports | 0.050&pm;0.002s |
+| real | 0.915&pm;0.045s |
+| user | 0.881&pm;0.026s |
+| sys | 0.131&pm;0.007s |

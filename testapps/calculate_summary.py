@@ -44,6 +44,6 @@ for key in results:
    values = results[key]
    avg = statistics.mean(values)
    stdev = statistics.stdev(values)
-   f.write('| ' + key + ' | ' + "{:.3f}".format(avg) + '&pm;' + "{:.3f}".format(stdev) + ' |\n')
+   f.write('| ' + key + ' | ' + "{:.3f}".format(avg) + '&pm;' + "{:.3f}".format(stdev) + 's |\n')
 
 f.close()

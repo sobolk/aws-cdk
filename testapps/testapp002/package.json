@@ -13,11 +13,15 @@
     "synth-profile": "node --prof --no-logfile-per-isolate bin/testapp002.js && node --prof-process v8.log > v8log.txt",
     "synth-no-ipc": "node bin/testapp002.no-ipc.js synth --quiet",
     "synth-extra-ipc": "node bin/testapp002.extra-ipc.js synth --quiet",
+    "synth-extra-ipc-many": "node bin/testapp002.extra-ipc-many-deployments.js synth --quiet",
     "synth-extra-no-ipc": "node bin/testapp002.extra-no-ipc.js synth --quiet",
+    "synth-extra-no-ipc-many": "node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet",
     "hotswap": "cdk deploy --hotswap-fallback --method=direct",
     "hotswap-no-ipc": "node bin/testapp002.no-ipc.js deploy --hotswap-fallback --method=direct",
     "hotswap-extra-ipc": "node bin/testapp002.extra-ipc.js deploy --hotswap-fallback --method=direct",
-    "hotswap-extra-no-ipc": "node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct"
+    "hotswap-extra-ipc-many": "node bin/testapp002.extra-ipc-many-deployments.js deploy --hotswap-fallback --method=direct",
+    "hotswap-extra-no-ipc": "node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct",
+    "hotswap-extra-no-ipc-many": "node bin/testapp002.extra-no-ipc-many-deployments.js deploy --hotswap-fallback --method=direct"
   },
   "devDependencies": {
     "aws-cdk": "file:../../packages/aws-cdk",

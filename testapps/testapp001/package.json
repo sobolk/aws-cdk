@@ -14,11 +14,15 @@
     "synth-profile": "node -r ts-node/register --prof --no-logfile-per-isolate bin/testapp001.ts && node --prof-process v8.log > v8log.txt",
     "synth-no-ipc": "ts-node bin/testapp001.no-ipc.ts synth --quiet",
     "synth-extra-ipc": "ts-node bin/testapp001.extra-ipc.ts synth --quiet",
+    "synth-extra-ipc-many": "ts-node bin/testapp001.extra-ipc-many-deployments.ts synth --quiet",
     "synth-extra-no-ipc": "ts-node bin/testapp001.extra-no-ipc.ts synth --quiet",
+    "synth-extra-no-ipc-many": "ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet",
     "hotswap": "cdk deploy --hotswap-fallback --method=direct",
     "hotswap-no-ipc": "ts-node bin/testapp001.no-ipc.ts deploy --hotswap-fallback --method=direct",
     "hotswap-extra-ipc": "ts-node bin/testapp001.extra-ipc.ts deploy --hotswap-fallback --method=direct",
-    "hotswap-extra-no-ipc": "ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct"
+    "hotswap-extra-ipc-many": "ts-node bin/testapp001.extra-ipc-many-deployments.ts deploy --hotswap-fallback --method=direct",
+    "hotswap-extra-no-ipc": "ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct",
+    "hotswap-extra-no-ipc-many": "ts-node bin/testapp001.extra-no-ipc-many-deployments.ts deploy --hotswap-fallback --method=direct"
   },
   "devDependencies": {
     "@types/jest": "^29.5.4",

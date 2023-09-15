@@ -10,8 +10,12 @@
     "test": "jest",
     "synth": "cdk synth --quiet",
     "synth-no-ipc": "node bin/testapp002.no-ipc.js synth --quiet",
+    "synth-extra-ipc": "node bin/testapp002.extra-ipc.js synth --quiet",
+    "synth-extra-no-ipc": "node bin/testapp002.extra-no-ipc.js synth --quiet",
     "hotswap": "cdk deploy --hotswap-fallback --method=direct",
-    "hotswap-no-ipc": "node bin/testapp002.no-ipc.js deploy --hotswap-fallback --method=direct"
+    "hotswap-no-ipc": "node bin/testapp002.no-ipc.js deploy --hotswap-fallback --method=direct",
+    "hotswap-extra-ipc": "node bin/testapp002.extra-ipc.js deploy --hotswap-fallback --method=direct",
+    "hotswap-extra-no-ipc": "node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct"
   },
   "devDependencies": {
     "aws-cdk": "file:../../packages/aws-cdk",

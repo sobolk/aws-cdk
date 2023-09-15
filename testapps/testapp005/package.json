@@ -11,6 +11,7 @@
     "cdk": "cdk",
     "synth": "cdk synth --quiet",
     "synth-debug": "ts-node bin/testapp005.ts",
+    "synth-profile": "node -r ts-node/register --prof --no-logfile-per-isolate bin/testapp005.ts && node --prof-process v8.log > v8log.txt",
     "hotswap": "cdk deploy --hotswap-fallback --method=direct"
   },
   "devDependencies": {

@@ -10,6 +10,7 @@
     "test": "jest",
     "synth": "cdk synth --quiet",
     "synth-debug": "node bin/testapp002.js",
+    "synth-profile": "node --prof --no-logfile-per-isolate bin/testapp002.js && node --prof-process v8.log > v8log.txt",
     "synth-no-ipc": "node bin/testapp002.no-ipc.js synth --quiet",
     "synth-extra-ipc": "node bin/testapp002.extra-ipc.js synth --quiet",
     "synth-extra-no-ipc": "node bin/testapp002.extra-no-ipc.js synth --quiet",

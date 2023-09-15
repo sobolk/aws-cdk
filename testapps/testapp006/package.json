@@ -8,8 +8,9 @@
     "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
     "cdk": "cdk",
     "test": "jest",
-    "synth-debug": "node bin/testapp006.js",
     "synth": "cdk synth --quiet",
+    "synth-debug": "node bin/testapp006.js",
+    "synth-profile": "node --prof --no-logfile-per-isolate bin/testapp006.js && node --prof-process v8.log > v8log.txt",
     "hotswap": "cdk deploy --hotswap-fallback --method=direct"
   },
   "devDependencies": {

@@ -89,7 +89,7 @@ export async function execProgram(aws: SdkProvider, config: Configuration): Prom
       // This is a hack instead of plumbing proper props to app or synth.
       process.env[envKey] = env[envKey];
     }
-    CDK_APP_HACK.synth();
+    CDK_APP_HACK.synth({ force: true });
     const elapsedTime = new Date().getTime() - startTime;
     // eslint-disable-next-line no-console
     console.log('\n✨  CDK_APP_HACK.synth(): %ss\n', elapsedTime / 1000);

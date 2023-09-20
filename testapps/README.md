@@ -72,3 +72,26 @@ Raw results can be seen in `summary.md` as well as partial `.md` files scattered
 See https://github.com/sobolk/aws-cdk/blob/synth-experiments/testapps/summary.md .
 
 ## Insights
+
+### Common stats
+
+#### synth
+
+| Measurement | testapp001 basic | testapp001 no IPC | testapp001 extra IPC | testapp001 extra no IPC | testapp002 basic | testapp002 no IPC | testapp002 extra IPC | testapp002 extra no IPC | testapp003 | testapp004 | testapp005 | testapp006 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Stack all imports | 0.122&pm;0.012s | 0.117&pm;0.004s | 0.111&pm;0.002s | 0.117&pm;0.004s |
+| App all imports | 0.307&pm;0.026s | 0.286&pm;0.006s | 0.285&pm;0.002s | 0.284&pm;0.007s |
+| Stage.synth() | 0.037&pm;0.003s | 0.031&pm;0.001s | 0.035&pm;0.002s | 0.033&pm;0.002s |
+| Synth from CLI side | 4.449&pm;0.108s | 0.032&pm;0.001s | 4.260&pm;0.019s | 0.033&pm;0.002s |
+| App total processing time | 0.362&pm;0.028s | 0.428&pm;0.008s | 0.335&pm;0.003s | 0.425&pm;0.012s |
+| App processing time no imports | 0.055&pm;0.004s | 0.143&pm;0.005s | 0.050&pm;0.002s | 0.141&pm;0.005s |
+| real | 5.088&pm;0.172s | 6.713&pm;0.098s | 5.454&pm;0.035s | 6.623&pm;0.123s |
+| user | 7.453&pm;0.080s | 9.587&pm;0.123s | 8.577&pm;0.081s | 9.513&pm;0.128s |
+| sys | 0.817&pm;0.018s | 1.138&pm;0.027s | 0.823&pm;0.015s | 1.127&pm;0.045s |
+
+#### hotswap
+
+| Measurement | testapp001 basic | testapp001 no IPC | testapp001 extra IPC | testapp001 extra no IPC | testapp002 basic | testapp002 no IPC | testapp002 extra IPC | testapp002 extra no IPC | testapp003 | testapp004 | testapp005 | testapp006 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 
+

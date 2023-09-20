@@ -73,7 +73,7 @@ See https://github.com/sobolk/aws-cdk/blob/synth-experiments/testapps/summary.md
 
 ## Insights
 
-### Common stats
+### Single deployment
 
 #### synth
 
@@ -93,5 +93,17 @@ See https://github.com/sobolk/aws-cdk/blob/synth-experiments/testapps/summary.md
 
 | Measurement | testapp001 basic | testapp001 no IPC | testapp001 extra IPC | testapp001 extra no IPC | testapp002 basic | testapp002 no IPC | testapp002 extra IPC | testapp002 extra no IPC | testapp003 | testapp004 | testapp005 | testapp006 |
 |-------------|------------------|-------------------|----------------------|-------------------------|------------------|-------------------|----------------------|-------------------------|------------|------------|------------|------------|
-| 
 
+
+### Multiple deployments
+
+#### hotswap
+
+| Measurement | testapp001 extra ipc many | testapp001 extra no ipc many | testapp002 extra ipc many | testapp002 extra no ipc many |
+| ------------- | ------------------ | ------------------- | ---------------------- | -- |
+| Synthesis time | 4.473&pm;0.099s | 0.029&pm;0.009s | 0.376&pm;0.023s | 0.025&pm;0.009s |
+| Deployment time | 0.668&pm;0.091s | 2.316&pm;0.177s | 0.234&pm;0.058s | 0.264&pm;0.041s |
+| Total time | 5.140&pm;0.134s | 2.345&pm;0.177s | 0.609&pm;0.062s | 0.289&pm;0.041s |
+| real | 69.657&pm;1.284s | 39.950&pm;1.143s | 22.076&pm;0.694s | 12.475&pm;1.025s |
+| user | 82.040&pm;0.907s | 21.155&pm;0.840s | 12.519&pm;0.232s | 4.060&pm;0.290s |
+| sys | 8.884&pm;0.244s | 2.218&pm;0.078s | 1.893&pm;0.098s | 0.619&pm;0.038s |

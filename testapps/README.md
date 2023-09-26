@@ -71,11 +71,13 @@ The `testapp006` is a copy of `testapp004` adapted to use CDK V1. The purpose is
 Raw results can be seen in `summary.md` as well as partial `.md` files scattered in `testapps` directory.
 See https://github.com/sobolk/aws-cdk/blob/synth-experiments/testapps/summary.md .
 
+Profiler results can be found in `v8.log` and `v8log.txt` files.
+
 ## Insights
 
 ### Single deployment
 
-#### synth
+#### synth all scenarios
 
 | Measurement                    | testapp001 basic | testapp001 no IPC | testapp001 extra IPC | testapp001 extra no IPC | testapp002 basic | testapp002 no IPC | testapp002 extra IPC | testapp002 extra no IPC | testapp003      | testapp004      | testapp005      | testapp006      |
 |--------------------------------|------------------|-------------------|----------------------|-------------------------|------------------|-------------------|----------------------|-------------------------|-----------------|-----------------|-----------------|-----------------|
@@ -89,7 +91,7 @@ See https://github.com/sobolk/aws-cdk/blob/synth-experiments/testapps/summary.md
 | user                           | 7.453&pm;0.080s  | 9.587&pm;0.123s   | 8.577&pm;0.081s      | 9.513&pm;0.128s         | 0.955&pm;0.007s  | 0.906&pm;0.016s   | 0.975&pm;0.014s      | 0.903&pm;0.018s         | 3.939&pm;0.134s | 0.881&pm;0.026s | 6.000&pm;0.080s | 3.746&pm;0.047s |
 | sys                            | 0.817&pm;0.018s  | 1.138&pm;0.027s   | 0.823&pm;0.015s      | 1.127&pm;0.045s         | 0.176&pm;0.005s  | 0.166&pm;0.010s   | 0.172&pm;0.004s      | 0.168&pm;0.009s         | 0.411&pm;0.040s | 0.131&pm;0.007s | 0.935&pm;0.099s | 0.711&pm;0.019s |
 
-#### hotswap
+#### hotswap all scenarios
 
 | Measurement                    | testapp001 basic | testapp001 no IPC | testapp001 extra IPC | testapp001 extra no IPC | testapp002 basic | testapp002 no IPC | testapp002 extra IPC | testapp002 extra no IPC | testapp003      | testapp004      | testapp005      | testapp006      |
 |--------------------------------|------------------|-------------------|----------------------|-------------------------|------------------|-------------------|----------------------|-------------------------|-----------------|-----------------|-----------------|-----------------|
@@ -106,9 +108,64 @@ See https://github.com/sobolk/aws-cdk/blob/synth-experiments/testapps/summary.md
 | user                           | 8.095&pm;0.056s  | 10.352&pm;0.094s  | 9.475&pm;0.077s      | 10.332&pm;0.147s        | 1.437&pm;0.031s  | 1.373&pm;0.033s   | 1.461&pm;0.032s      | 1.375&pm;0.022s         | 4.550&pm;0.141s | 1.375&pm;0.049s | 6.279&pm;0.070s | 4.061&pm;0.055s |
 | sys                            | 0.864&pm;0.010s  | 1.254&pm;0.050s   | 0.941&pm;0.009s      | 1.194&pm;0.034s         | 0.226&pm;0.008s  | 0.233&pm;0.008s   | 0.238&pm;0.006s      | 0.235&pm;0.005s         | 0.487&pm;0.040s | 0.196&pm;0.024s | 0.928&pm;0.015s | 0.736&pm;0.027s |
 
+#### IPC vs no IPC single deployment
+
+##### hotswap
+
+| Measurement                    | testapp001 ipc (TS) | testapp001 no IPC (TS) |
+|--------------------------------|---------------------|------------------------|
+| Stack all import               | 0.115&pm;0.002s     | 0.121&pm;0.004s        |
+| App all import                 | 0.294&pm;0.003s     | 0.294&pm;0.008s        |
+| Stage.synth()                  | 0.036&pm;0.002s     | 0.032&pm;0.001s        |
+| Synth from CLI side            | 4.392&pm;0.050s     | 0.032&pm;0.001s        |
+| App total processing time      | 0.346&pm;0.004s     | 2.251&pm;0.123s        |
+| App processing time no imports | 0.052&pm;0.002s     | 1.956&pm;0.128s        |
+| Synthesis time                 | 4.404&pm;0.051s     | 0.043&pm;0.005s        |
+| Deployment time                | 0.614&pm;0.018s     | 0.626&pm;0.023s        |
+| Total time                     | 5.018&pm;0.054s     | 0.669&pm;0.023s        |
+| real                           | 6.849&pm;0.100s     | 8.560&pm;0.101s        |
+| user                           | 8.095&pm;0.056s     | 10.352&pm;0.094s       |
+| sys                            | 0.864&pm;0.010s     | 1.254&pm;0.050s        |
+
+| Measurement                    | testapp002 ipc (JS) | testapp002 no IPC (JS) |
+|--------------------------------|---------------------|------------------------|
+| Stack all import               | 0.112&pm;0.004s     | 0.114&pm;0.004s        |
+| App all import                 | 0.258&pm;0.010s     | 0.246&pm;0.007s        |
+| Stage.synth()                  | 0.035&pm;0.002s     | 0.032&pm;0.001s        |
+| Synth from CLI side            | 0.369&pm;0.013s     | 0.033&pm;0.001s        |
+| App total processing time      | 0.310&pm;0.013s     | 1.839&pm;0.167s        |
+| App processing time no imports | 0.052&pm;0.004s     | 1.594&pm;0.165s        |
+| Synthesis time                 | 0.380&pm;0.012s     | 0.041&pm;0.003s        |
+| Deployment time                | 0.230&pm;0.036s     | 0.224&pm;0.022s        |
+| Total time                     | 0.611&pm;0.037s     | 0.268&pm;0.023s        |
+| real                           | 2.483&pm;0.127s     | 2.375&pm;0.171s        |
+| user                           | 1.437&pm;0.031s     | 1.373&pm;0.033s        |
+| sys                            | 0.226&pm;0.008s     | 0.233&pm;0.008s        |
+
+#### Typescript vs Javascript
+
+##### hotswap
+
+Typescript vs Javascript, apps using CDK from NPM.
+
+| Measurement                    | testapp003 (TS) | testapp004 (JS) |
+|--------------------------------|-----------------|-----------------|
+| Stack all import               | 0.069&pm;0.007s | 0.073&pm;0.005s |
+| App all import                 | 0.216&pm;0.020s | 0.213&pm;0.033s |
+| App total processing time      | 0.270&pm;0.026s | 0.265&pm;0.037s |
+| App processing time no imports | 0.054&pm;0.007s | 0.052&pm;0.004s |
+| Synthesis time                 | 2.241&pm;0.120s | 0.341&pm;0.039s |
+| Deployment time                | 0.447&pm;0.032s | 0.485&pm;0.073s |
+| Total time                     | 2.687&pm;0.129s | 0.824&pm;0.079s |
+| real                           | 4.699&pm;0.420s | 2.705&pm;0.227s |
+| user                           | 4.550&pm;0.141s | 1.375&pm;0.049s |
+| sys                            | 0.487&pm;0.040s | 0.196&pm;0.024s |
+
 ### Multiple deployments
 
-#### hotswap
+#### IPC vs no IPC
+
+##### hotswap
 
 | Measurement | testapp001 extra ipc many | testapp001 extra no ipc many | testapp002 extra ipc many | testapp002 extra no ipc many |
 | ------------- | ------------------ | ------------------- | ---------------------- | -- |
@@ -118,3 +175,17 @@ See https://github.com/sobolk/aws-cdk/blob/synth-experiments/testapps/summary.md
 | real | 69.657&pm;1.284s | 39.950&pm;1.143s | 22.076&pm;0.694s | 12.475&pm;1.025s |
 | user | 82.040&pm;0.907s | 21.155&pm;0.840s | 12.519&pm;0.232s | 4.060&pm;0.290s |
 | sys | 8.884&pm;0.244s | 2.218&pm;0.078s | 1.893&pm;0.098s | 0.619&pm;0.038s |
+
+### Synthesis CPU profiler
+
+#### testapp003
+
+`CDK_OUTDIR=cdk.out node -r ts-node/register --prof --no-logfile-per-isolate bin/testapp003.ts && node --prof-process v8.log > v8log.txt`
+
+![image testapp003](./testapp003/testapp003_synth_flame_graph.png)
+
+### testapp004
+
+`CDK_OUTDIR=cdk.out node --prof --no-logfile-per-isolate bin/testapp004.js && node --prof-process v8.log > v8log.txt`
+
+![image testapp004](./testapp004/testapp004_synth_flame_graph.png)

@@ -1,0 +1,230 @@
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0.001s
+
+
+✨  Testapp008 all require(): 0.768s
+
+
+✨  Testapp008Stack ctor minus super(): 0.015s
+
+
+✨  Testapp008 total processing time: 0.816s
+
+
+✨  Testapp008 processing time no imports: 0.048s
+
+
+real 1.47
+user 1.24
+sys 0.21
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0s
+
+
+✨  Testapp008 all require(): 0.583s
+
+
+✨  Testapp008Stack ctor minus super(): 0.013s
+
+
+✨  Testapp008 total processing time: 0.63s
+
+
+✨  Testapp008 processing time no imports: 0.047s
+
+
+real 1.26
+user 1.25
+sys 0.19
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0s
+
+
+✨  Testapp008 all require(): 0.564s
+
+
+✨  Testapp008Stack ctor minus super(): 0.013s
+
+
+✨  Testapp008 total processing time: 0.611s
+
+
+✨  Testapp008 processing time no imports: 0.047s
+
+
+real 1.24
+user 1.23
+sys 0.19
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0s
+
+
+✨  Testapp008 all require(): 0.573s
+
+
+✨  Testapp008Stack ctor minus super(): 0.013s
+
+
+✨  Testapp008 total processing time: 0.62s
+
+
+✨  Testapp008 processing time no imports: 0.047s
+
+
+real 1.26
+user 1.23
+sys 0.19
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0s
+
+
+✨  Testapp008 all require(): 0.568s
+
+
+✨  Testapp008Stack ctor minus super(): 0.013s
+
+
+✨  Testapp008 total processing time: 0.616s
+
+
+✨  Testapp008 processing time no imports: 0.048s
+
+
+real 1.25
+user 1.23
+sys 0.19
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0s
+
+
+✨  Testapp008 all require(): 0.564s
+
+
+✨  Testapp008Stack ctor minus super(): 0.014s
+
+
+✨  Testapp008 total processing time: 0.611s
+
+
+✨  Testapp008 processing time no imports: 0.047s
+
+
+real 1.24
+user 1.23
+sys 0.19
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0s
+
+
+✨  Testapp008 all require(): 0.575s
+
+
+✨  Testapp008Stack ctor minus super(): 0.014s
+
+
+✨  Testapp008 total processing time: 0.623s
+
+
+✨  Testapp008 processing time no imports: 0.048s
+
+
+real 1.25
+user 1.24
+sys 0.19
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0s
+
+
+✨  Testapp008 all require(): 0.559s
+
+
+✨  Testapp008Stack ctor minus super(): 0.013s
+
+
+✨  Testapp008 total processing time: 0.606s
+
+
+✨  Testapp008 processing time no imports: 0.047s
+
+
+real 1.25
+user 1.22
+sys 0.19
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0s
+
+
+✨  Testapp008 all require(): 0.567s
+
+
+✨  Testapp008Stack ctor minus super(): 0.013s
+
+
+✨  Testapp008 total processing time: 0.614s
+
+
+✨  Testapp008 processing time no imports: 0.047s
+
+
+real 1.25
+user 1.24
+sys 0.19
+
+> testapp008@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp008Stack all require(): 0s
+
+
+✨  Testapp008 all require(): 0.593s
+
+
+✨  Testapp008Stack ctor minus super(): 0.014s
+
+
+✨  Testapp008 total processing time: 0.644s
+
+
+✨  Testapp008 processing time no imports: 0.051s
+
+
+real 1.29
+user 1.27
+sys 0.20

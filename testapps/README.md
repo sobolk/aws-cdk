@@ -182,10 +182,124 @@ Typescript vs Javascript, apps using CDK from NPM.
 
 `CDK_OUTDIR=cdk.out node -r ts-node/register --prof --no-logfile-per-isolate bin/testapp003.ts && node --prof-process v8.log > v8log.txt`
 
+From `v8log.txt`
+
+Summary
+
+```
+ [Summary]:
+   ticks  total  nonlib   name
+    479   19.0%   20.1%  JavaScript
+   1894   75.2%   79.3%  C++
+    152    6.0%    6.4%  GC
+    130    5.2%          Shared libraries
+     15    0.6%          Unaccounted
+```
+
+Heaviest call paths
+
+```
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1690   67.1%  t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+    303   17.9%    Function: ^internalCompileFunction node:internal/vm:31:33
+    303  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1154:18
+    303  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+    199   65.7%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+    199  100.0%            Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/ts-node/dist/index.js:849:40
+    104   34.3%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+    100   96.2%            LazyCompile: ~require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/ts-node/dist/index.js:849:40
+      4    3.8%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+    265   15.7%    Function: ^readSync node:fs:708:18
+    265  100.0%      Function: ^tryReadSync node:fs:447:21
+    265  100.0%        Function: ^readFileSync node:fs:468:22
+    180   67.9%          Function: ^readFileWorker /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/typescript/lib/typescript.js:6386:34
+    180  100.0%            Function: ^readFile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/typescript/lib/typescript.js:6411:28
+     65   24.5%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+     65  100.0%            Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/ts-node/dist/index.js:849:40
+     12    4.5%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      6   50.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      4   33.3%            LazyCompile: ~require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/ts-node/dist/index.js:849:40
+      2   16.7%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1107:33
+      8    3.0%          LazyCompile: ~readFileWorker /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/typescript/lib/typescript.js:6386:34
+      5   62.5%            LazyCompile: ~readFile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/typescript/lib/typescript.js:6411:28
+      3   37.5%            Function: ^readFile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/typescript/lib/typescript.js:6411:28
+    196   11.6%    LazyCompile: ~Script node:vm:64:14
+    196  100.0%      LazyCompile: ~_moduleCompile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/v8-compile-cache-lib/v8-compile-cache.js:207:17
+    196  100.0%        LazyCompile: ~_ownModuleCompile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp003/node_modules/v8-compile-cache-lib/v8-compile-cache.js:157:31
+    196  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+    196  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+```
+
+
 ![image testapp003](./testapp003/testapp003_synth_flame_graph.png)
 
 ### testapp004
 
 `CDK_OUTDIR=cdk.out node --prof --no-logfile-per-isolate bin/testapp004.js && node --prof-process v8.log > v8log.txt`
+
+Summary
+
+```
+ [Summary]:
+   ticks  total  nonlib   name
+      8    1.3%    1.3%  JavaScript
+    580   90.6%   97.6%  C++
+      9    1.4%    1.5%  GC
+     46    7.2%          Shared libraries
+      6    0.9%          Unaccounted
+```
+
+Heaviest call paths
+
+```
+[Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    550   85.9%  t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+    200   36.4%    Function: ^internalCompileFunction node:internal/vm:31:33
+    197   98.5%      Function: ^wrapSafe node:internal/modules/cjs/loader:1154:18
+    195   99.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+    177   90.8%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+    177  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+     18    9.2%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+     18  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      2    1.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1210:37
+      2  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      3    1.5%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1154:18
+      3  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1210:37
+      3  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      3  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1107:33
+     99   18.0%    LazyCompile: ~internalCompileFunction node:internal/vm:31:33
+     99  100.0%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1154:18
+     99  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1210:37
+     99  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+     99  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1107:33
+     77   14.0%    Function: ^readSync node:fs:708:18
+     75   97.4%      Function: ^tryReadSync node:fs:447:21
+     75  100.0%        Function: ^readFileSync node:fs:468:22
+     56   74.7%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+     56  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+     19   25.3%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+     17   89.5%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      2   10.5%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1107:33
+      2    2.6%      LazyCompile: ~contentFingerprintMiss /Users/sobkamil/git/aws-cdk-fork/testapps/testapp004/node_modules/aws-cdk-lib/core/lib/fs/fingerprint.js:2:2239
+      2  100.0%        LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp004/node_modules/aws-cdk-lib/core/lib/fs/fingerprint.js:2:2128
+      2  100.0%          LazyCompile: ~obtain /Users/sobkamil/git/aws-cdk-fork/testapps/testapp004/node_modules/aws-cdk-lib/core/lib/private/cache.js:1:168
+      2  100.0%            LazyCompile: ~contentFingerprint /Users/sobkamil/git/aws-cdk-fork/testapps/testapp004/node_modules/aws-cdk-lib/core/lib/fs/fingerprint.js:2:1887
+     18    3.3%    Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      3   16.7%      Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      3  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      3  100.0%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+```
 
 ![image testapp004](./testapp004/testapp004_synth_flame_graph.png)

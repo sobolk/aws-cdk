@@ -1,0 +1,1160 @@
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.18s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.039s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.124s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.007s
+
+
+✨  Testapp001Stack all import: 0.171s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.212s
+
+
+✨  Testapp001 all import: 0.394s
+
+
+✨  Testapp001Stack ctor minus super(): 0.063s
+
+
+✨  Stage.synth(): 0.033s
+
+
+✨  CDK_APP_HACK.synth(): 0.034s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.011s
+
+
+
+✨  Stage.synth(): 0.013s
+
+
+✨  CDK_APP_HACK.synth(): 0.013s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.012s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.011s
+
+
+
+✨  Testapp001 total processing time: 0.757s
+
+
+✨  Testapp001 processing time no imports: 0.363s
+
+real 7.91
+user 10.20
+sys 1.31
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.139s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.033s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.117s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.007s
+
+
+✨  Testapp001Stack all import: 0.158s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.19s
+
+
+✨  Testapp001 all import: 0.33s
+
+
+✨  Testapp001Stack ctor minus super(): 0.052s
+
+
+✨  Stage.synth(): 0.032s
+
+
+✨  CDK_APP_HACK.synth(): 0.033s
+
+
+
+✨  Stage.synth(): 0.012s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.014s
+
+
+✨  CDK_APP_HACK.synth(): 0.014s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Testapp001 total processing time: 0.7s
+
+
+✨  Testapp001 processing time no imports: 0.37s
+
+real 7.29
+user 10.19
+sys 1.28
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.134s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0.001s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.025s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.081s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.112s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.149s
+
+
+✨  Testapp001 all import: 0.284s
+
+
+✨  Testapp001Stack ctor minus super(): 0.031s
+
+
+✨  Stage.synth(): 0.029s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.012s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Testapp001 total processing time: 0.57s
+
+
+✨  Testapp001 processing time no imports: 0.286s
+
+real 6.79
+user 9.65
+sys 1.12
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.138s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.031s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.082s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.117s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.147s
+
+
+✨  Testapp001 all import: 0.285s
+
+
+✨  Testapp001Stack ctor minus super(): 0.035s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Stage.synth(): 0.012s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.012s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.015s
+
+
+✨  CDK_APP_HACK.synth(): 0.015s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Testapp001 total processing time: 0.601s
+
+
+✨  Testapp001 processing time no imports: 0.316s
+
+real 6.67
+user 9.71
+sys 1.11
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.134s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.047s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.133s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.018s
+
+
+✨  Testapp001Stack all import: 0.199s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.239s
+
+
+✨  Testapp001 all import: 0.375s
+
+
+✨  Testapp001Stack ctor minus super(): 0.054s
+
+
+✨  Stage.synth(): 0.037s
+
+
+✨  CDK_APP_HACK.synth(): 0.037s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.011s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Testapp001 total processing time: 0.761s
+
+
+✨  Testapp001 processing time no imports: 0.386s
+
+real 6.88
+user 9.80
+sys 1.16
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.132s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.031s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.083s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.119s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.149s
+
+
+✨  Testapp001 all import: 0.282s
+
+
+✨  Testapp001Stack ctor minus super(): 0.032s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.011s
+
+
+
+✨  Stage.synth(): 0.014s
+
+
+✨  CDK_APP_HACK.synth(): 0.014s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Testapp001 total processing time: 0.568s
+
+
+✨  Testapp001 processing time no imports: 0.286s
+
+real 7.13
+user 9.97
+sys 1.14
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.128s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.082s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.114s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.148s
+
+
+✨  Testapp001 all import: 0.276s
+
+
+✨  Testapp001Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+
+✨  Stage.synth(): 0.014s
+
+
+✨  CDK_APP_HACK.synth(): 0.014s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Testapp001 total processing time: 0.559s
+
+
+✨  Testapp001 processing time no imports: 0.283s
+
+real 6.65
+user 9.55
+sys 1.12
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.129s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.081s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.111s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.146s
+
+
+✨  Testapp001 all import: 0.276s
+
+
+✨  Testapp001Stack ctor minus super(): 0.031s
+
+
+✨  Stage.synth(): 0.035s
+
+
+✨  CDK_APP_HACK.synth(): 0.035s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.012s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Testapp001 total processing time: 0.561s
+
+
+✨  Testapp001 processing time no imports: 0.285s
+
+real 6.58
+user 9.64
+sys 1.09
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.137s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.081s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.112s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.142s
+
+
+✨  Testapp001 all import: 0.28s
+
+
+✨  Testapp001Stack ctor minus super(): 0.03s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+
+✨  Stage.synth(): 0.014s
+
+
+✨  CDK_APP_HACK.synth(): 0.014s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Testapp001 total processing time: 0.563s
+
+
+✨  Testapp001 processing time no imports: 0.283s
+
+real 6.61
+user 9.52
+sys 1.11
+
+> testapp001@0.1.0 synth-extra-no-ipc-many
+> ts-node bin/testapp001.extra-no-ipc-many-deployments.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.132s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.08s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.11s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.14s
+
+
+✨  Testapp001 all import: 0.273s
+
+
+✨  Testapp001Stack ctor minus super(): 0.03s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+
+✨  Stage.synth(): 0.014s
+
+
+✨  CDK_APP_HACK.synth(): 0.014s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Testapp001 total processing time: 0.558s
+
+
+✨  Testapp001 processing time no imports: 0.285s
+
+real 6.58
+user 9.62
+sys 1.08

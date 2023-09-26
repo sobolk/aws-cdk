@@ -1,0 +1,490 @@
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.111s
+
+
+✨  Testapp002 all require(): 0.244s
+
+
+✨  Testapp002Stack ctor minus super(): 0.039s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  CDK_APP_HACK.synth(): 0.034s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.24s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.28s
+
+
+
+✨  Testapp002 total processing time: 1.812s
+
+
+✨  Testapp002 processing time no imports: 1.568s
+
+real 2.36
+user 1.41
+sys 0.24
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.112s
+
+
+✨  Testapp002 all require(): 0.242s
+
+
+✨  Testapp002Stack ctor minus super(): 0.041s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.22s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.26s
+
+
+
+✨  Testapp002 total processing time: 1.726s
+
+
+✨  Testapp002 processing time no imports: 1.484s
+
+real 2.25
+user 1.36
+sys 0.23
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.114s
+
+
+✨  Testapp002 all require(): 0.245s
+
+
+✨  Testapp002Stack ctor minus super(): 0.048s
+
+
+✨  Stage.synth(): 0.032s
+
+
+✨  CDK_APP_HACK.synth(): 0.033s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.21s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.25s
+
+
+
+✨  Testapp002 total processing time: 1.789s
+
+
+✨  Testapp002 processing time no imports: 1.544s
+
+real 2.33
+user 1.37
+sys 0.24
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.112s
+
+
+✨  Testapp002 all require(): 0.241s
+
+
+✨  Testapp002Stack ctor minus super(): 0.045s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.21s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.25s
+
+
+
+✨  Testapp002 total processing time: 1.88s
+
+
+✨  Testapp002 processing time no imports: 1.639s
+
+real 2.40
+user 1.35
+sys 0.24
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.24s
+
+
+✨  Testapp002Stack ctor minus super(): 0.037s
+
+
+✨  Stage.synth(): 0.033s
+
+
+✨  CDK_APP_HACK.synth(): 0.033s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.23s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.28s
+
+
+
+✨  Testapp002 total processing time: 1.795s
+
+
+✨  Testapp002 processing time no imports: 1.555s
+
+real 2.35
+user 1.34
+sys 0.23
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.117s
+
+
+✨  Testapp002 all require(): 0.252s
+
+
+✨  Testapp002Stack ctor minus super(): 0.046s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  CDK_APP_HACK.synth(): 0.034s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.24s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.29s
+
+
+
+✨  Testapp002 total processing time: 1.734s
+
+
+✨  Testapp002 processing time no imports: 1.482s
+
+real 2.28
+user 1.40
+sys 0.24
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.113s
+
+
+✨  Testapp002 all require(): 0.245s
+
+
+✨  Testapp002Stack ctor minus super(): 0.046s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.21s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.25s
+
+
+
+✨  Testapp002 total processing time: 1.588s
+
+
+✨  Testapp002 processing time no imports: 1.343s
+
+real 2.14
+user 1.37
+sys 0.24
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.111s
+
+
+✨  Testapp002 all require(): 0.243s
+
+
+✨  Testapp002Stack ctor minus super(): 0.037s
+
+
+✨  Stage.synth(): 0.033s
+
+
+✨  CDK_APP_HACK.synth(): 0.033s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.22s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.26s
+
+
+
+✨  Testapp002 total processing time: 1.778s
+
+
+✨  Testapp002 processing time no imports: 1.535s
+
+real 2.32
+user 1.39
+sys 0.23
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.113s
+
+
+✨  Testapp002 all require(): 0.241s
+
+
+✨  Testapp002Stack ctor minus super(): 0.04s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.2s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.24s
+
+
+
+✨  Testapp002 total processing time: 2.047s
+
+
+✨  Testapp002 processing time no imports: 1.806s
+
+real 2.57
+user 1.38
+sys 0.23
+
+> testapp002@0.1.0 hotswap-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp002Stack all require(): 0.11s
+
+
+✨  Testapp002 all require(): 0.239s
+
+
+✨  Testapp002Stack ctor minus super(): 0.037s
+
+
+✨  Stage.synth(): 0.032s
+
+
+✨  CDK_APP_HACK.synth(): 0.033s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp002Stack: deploying... [1/1]
+
+ ✨ hotswap deployment skipped - no changes were detected (use --force to override)
+
+
+ ✅  Testapp002Stack (no changes)
+
+✨  Deployment time: 0.25s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp002Stack/9147f8b0-526d-11ee-a61c-02a3732b737d
+
+✨  Total time: 0.29s
+
+
+
+✨  Testapp002 total processing time: 1.875s
+
+
+✨  Testapp002 processing time no imports: 1.636s
+
+real 2.40
+user 1.38
+sys 0.23

@@ -1,0 +1,530 @@
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.132s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.027s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.082s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.113s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.143s
+
+
+✨  Testapp001 all import: 0.276s
+
+
+✨  Testapp001Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Testapp001 total processing time: 0.412s
+
+
+✨  Testapp001 processing time no imports: 0.136s
+
+real 6.45
+user 9.40
+sys 1.05
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.135s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.081s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.111s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.142s
+
+
+✨  Testapp001 all import: 0.277s
+
+
+✨  Testapp001Stack ctor minus super(): 0.035s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+
+✨  Testapp001 total processing time: 0.415s
+
+
+✨  Testapp001 processing time no imports: 0.138s
+
+real 6.61
+user 9.46
+sys 1.12
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.133s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.08s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.111s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.142s
+
+
+✨  Testapp001 all import: 0.276s
+
+
+✨  Testapp001Stack ctor minus super(): 0.028s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+
+✨  Testapp001 total processing time: 0.408s
+
+
+✨  Testapp001 processing time no imports: 0.132s
+
+real 6.46
+user 9.41
+sys 1.07
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.127s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.083s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.114s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.151s
+
+
+✨  Testapp001 all import: 0.278s
+
+
+✨  Testapp001Stack ctor minus super(): 0.032s
+
+
+✨  Stage.synth(): 0.035s
+
+
+✨  CDK_APP_HACK.synth(): 0.035s
+
+
+
+✨  Testapp001 total processing time: 0.415s
+
+
+✨  Testapp001 processing time no imports: 0.137s
+
+real 6.46
+user 9.29
+sys 1.08
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.138s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0.001s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.031s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.085s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.122s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.152s
+
+
+✨  Testapp001 all import: 0.291s
+
+
+✨  Testapp001Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.032s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+
+✨  Testapp001 total processing time: 0.431s
+
+
+✨  Testapp001 processing time no imports: 0.14s
+
+real 6.71
+user 9.59
+sys 1.16
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.14s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.028s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.086s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.122s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.154s
+
+
+✨  Testapp001 all import: 0.296s
+
+
+✨  Testapp001Stack ctor minus super(): 0.036s
+
+
+✨  Stage.synth(): 0.033s
+
+
+✨  CDK_APP_HACK.synth(): 0.033s
+
+
+
+✨  Testapp001 total processing time: 0.446s
+
+
+✨  Testapp001 processing time no imports: 0.15s
+
+real 6.75
+user 9.62
+sys 1.18
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.131s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.029s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.083s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.116s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.153s
+
+
+✨  Testapp001 all import: 0.285s
+
+
+✨  Testapp001Stack ctor minus super(): 0.036s
+
+
+✨  Stage.synth(): 0.037s
+
+
+✨  CDK_APP_HACK.synth(): 0.037s
+
+
+
+✨  Testapp001 total processing time: 0.43s
+
+
+✨  Testapp001 processing time no imports: 0.145s
+
+real 6.74
+user 9.72
+sys 1.16
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.135s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.032s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.082s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.119s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.15s
+
+
+✨  Testapp001 all import: 0.286s
+
+
+✨  Testapp001Stack ctor minus super(): 0.034s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Testapp001 total processing time: 0.43s
+
+
+✨  Testapp001 processing time no imports: 0.144s
+
+real 6.74
+user 9.55
+sys 1.16
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.139s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0.001s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.031s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.082s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.119s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.149s
+
+
+✨  Testapp001 all import: 0.288s
+
+
+✨  Testapp001Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.035s
+
+
+✨  CDK_APP_HACK.synth(): 0.035s
+
+
+
+✨  Testapp001 total processing time: 0.434s
+
+
+✨  Testapp001 processing time no imports: 0.146s
+
+real 6.65
+user 9.61
+sys 1.13
+
+> testapp001@0.1.0 synth-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts synth --quiet
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.136s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.033s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.084s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.122s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.155s
+
+
+✨  Testapp001 all import: 0.292s
+
+
+✨  Testapp001Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Testapp001 total processing time: 0.43s
+
+
+✨  Testapp001 processing time no imports: 0.138s
+
+real 6.66
+user 9.48
+sys 1.16

@@ -1,0 +1,510 @@
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.109s
+
+
+✨  Testapp006 all require(): 0.185s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.247s
+
+
+✨  Testapp006 processing time no imports: 0.062s
+
+
+✨  Synthesis time: 0.33s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.43s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.76s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.80
+user 4.01
+sys 0.75
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.109s
+
+
+✨  Testapp006 all require(): 0.18s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.242s
+
+
+✨  Testapp006 processing time no imports: 0.062s
+
+
+✨  Synthesis time: 0.32s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.47s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.79s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.83
+user 4.01
+sys 0.71
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.107s
+
+
+✨  Testapp006 all require(): 0.181s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.245s
+
+
+✨  Testapp006 processing time no imports: 0.064s
+
+
+✨  Synthesis time: 0.33s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.36s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.69s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.71
+user 4.02
+sys 0.72
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.117s
+
+
+✨  Testapp006 all require(): 0.197s
+
+
+✨  Testapp006Stack ctor minus super(): 0.016s
+
+
+✨  Testapp006 total processing time: 0.265s
+
+
+✨  Testapp006 processing time no imports: 0.068s
+
+
+✨  Synthesis time: 0.35s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.44s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.79s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.86
+user 4.01
+sys 0.72
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.11s
+
+
+✨  Testapp006 all require(): 0.189s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.251s
+
+
+✨  Testapp006 processing time no imports: 0.062s
+
+
+✨  Synthesis time: 0.33s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.41s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.74s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.94
+user 4.13
+sys 0.80
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.106s
+
+
+✨  Testapp006 all require(): 0.18s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.242s
+
+
+✨  Testapp006 processing time no imports: 0.062s
+
+
+✨  Synthesis time: 0.32s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.38s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.7s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.78
+user 4.08
+sys 0.72
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.107s
+
+
+✨  Testapp006 all require(): 0.179s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.241s
+
+
+✨  Testapp006 processing time no imports: 0.062s
+
+
+✨  Synthesis time: 0.32s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.37s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.69s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.82
+user 4.13
+sys 0.73
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.11s
+
+
+✨  Testapp006 all require(): 0.188s
+
+
+✨  Testapp006Stack ctor minus super(): 0.013s
+
+
+✨  Testapp006 total processing time: 0.251s
+
+
+✨  Testapp006 processing time no imports: 0.063s
+
+
+✨  Synthesis time: 0.33s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.37s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.7s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.83
+user 4.14
+sys 0.76
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.109s
+
+
+✨  Testapp006 all require(): 0.185s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.246s
+
+
+✨  Testapp006 processing time no imports: 0.061s
+
+
+✨  Synthesis time: 0.33s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.4s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.73s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.75
+user 4.06
+sys 0.72
+
+> testapp006@0.1.0 hotswap
+> cdk deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp006Stack all require(): 0.109s
+
+
+✨  Testapp006 all require(): 0.183s
+
+
+✨  Testapp006Stack ctor minus super(): 0.015s
+
+
+✨  Testapp006 total processing time: 0.248s
+
+
+✨  Testapp006 processing time no imports: 0.065s
+
+
+✨  Synthesis time: 0.33s
+
+Testapp006Stack: deploying...
+
+ ✅  Testapp006Stack (no changes)
+
+✨  Deployment time: 0.42s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp006Stack/2fbfa840-5376-11ee-988b-0213730b7303
+
+✨  Total time: 0.75s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.74
+user 4.02
+sys 0.73

@@ -10,7 +10,7 @@
     "test": "jest",
     "synth": "cdk synth --quiet",
     "synth-debug": "node bin/testapp004.js",
-    "synth-profile": "node --prof --no-logfile-per-isolate bin/testapp004.js && node --prof-process v8.log > v8log.txt",
+    "synth-profile": "CDK_OUTDIR=cdk.out node --prof --no-logfile-per-isolate bin/testapp004.js && node --prof-process v8.log > v8log.txt",
     "hotswap": "cdk deploy --hotswap-fallback --method=direct"
   },
   "devDependencies": {

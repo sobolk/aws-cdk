@@ -59,3 +59,18 @@ cd testapp008
 ../run_benchmark.sh "npm run synth"
 ../run_benchmark.sh "npm run hotswap"
 cd ..
+
+cd testapp009
+../run_benchmark.sh "npm run synth"
+../run_benchmark.sh "npm run hotswap"
+cd ..
+
+cd testapp010
+../run_benchmark.sh "npm run synth"
+../run_benchmark.sh "npm run hotswap"
+cd ..
+
+cd testapp011
+../run_benchmark.sh "npm run synth"
+../run_benchmark.sh "npm run hotswap"
+cd ..

@@ -10,7 +10,8 @@ if this_script_dir_path != cwd:
     raise Exception('this script must run in ' + this_script_dir_path + ' directory')
 
 directories = ['testapp001', 'testapp002', 'testapp003', 'testapp004', 'testapp005',
- 'testapp006', 'testapp007', 'testapp008', 'testapp009', 'testapp010', 'testapp011']
+ 'testapp006', 'testapp007', 'testapp008', 'testapp009', 'testapp010', 'testapp011',
+ 'testapp012']
 
 global_summary = ''
 

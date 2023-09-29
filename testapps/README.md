@@ -500,3 +500,21 @@ Heaviest call paths
 ```
 
 ![image testapp004](./testapp004/testapp004_synth_flame_graph.png)
+
+# Resources
+
+1. CDK team load time improvement PRs
+   1. https://github.com/aws/aws-cdk/pull/27217
+   2. https://github.com/aws/aws-cdk/pull/27314
+2. `ts-node` 
+   1. performance guide https://typestrong.org/ts-node/docs/performance/
+   2. no support for incremental compilation https://github.com/TypeStrong/ts-node/issues/817
+3. Typescript performance guide https://github.com/microsoft/TypeScript/wiki/Performance
+4. `tsx` 
+   1. https://github.com/esbuild-kit/tsx
+   2. no type checking https://github.com/esbuild-kit/tsx#does-it-do-type-checking
+5. `vm.Script` does not support `ts-node` https://github.com/TypeStrong/ts-node/issues/802 
+6. `@swc/core`
+   1. Compatiblility issues https://github.com/TypeStrong/ts-node/pull/2062
+   2. No support for type checking https://github.com/swc-project/swc/issues/571
+7. ESM does not support cache invalidation/module reloading https://github.com/nodejs/node/issues/49442

@@ -29,7 +29,8 @@ All test apps has been instrumented to measure time of imports and actual logic 
    3. `testapp001.extra-ipc.ts` - simulates Amplify scenario, i.e. Amplify IPC-calling CDK cli, CDK cli IPC-calling basic CDK app.
    4. `testapp001.extra-no-ipc.ts` - simulates Amplify scenario, but with all IPC calls removed.
    5. `testapp001.extra-ipc-many-deployments.ts` - variation of `testapp002.extra-ipc.ts` that executes same scenario 10 times in a loop.
-   6. `testapp001.extra-no-ipc-many-deployments.ts` - variation of `testapp001.extra-no-ipc.ts` that executes same scenario 10 times in a loop.
+   6. `testapp001.extra-ipc-many-deployments-transpile-only.ts` - variation of `testapp001.extra-ipc-many-deployments.ts` that appends `transpileOnly` flag in subsequent deployments.
+   7. `testapp001.extra-no-ipc-many-deployments.ts` - variation of `testapp001.extra-no-ipc.ts` that executes same scenario 10 times in a loop.
 
 ### testapp002
 
@@ -314,6 +315,19 @@ This section compares different `ts-node` configurations suggested by https://ty
 | real | 69.657&pm;1.284s | 39.950&pm;1.143s | 22.076&pm;0.694s | 12.475&pm;1.025s |
 | user | 82.040&pm;0.907s | 21.155&pm;0.840s | 12.519&pm;0.232s | 4.060&pm;0.290s |
 | sys | 8.884&pm;0.244s | 2.218&pm;0.078s | 1.893&pm;0.098s | 0.619&pm;0.038s |
+
+#### Default vs no type checking in subsequent deployments.
+
+
+
+| Measurement     | testapp001 extra ipc many | testapp001 extra ipc many with transpileOnly |
+|-----------------|---------------------------|----------------------------------------------|
+| Synthesis time  | 4.473&pm;0.099s           | 1.146&pm;1.091s                              |
+| Deployment time | 0.668&pm;0.091s           | 2.361&pm;0.228s                              |
+| Total time      | 5.140&pm;0.134s           | 3.506&pm;1.129s                              |
+| real            | 69.657&pm;1.284s          | 53.192&pm;1.058s                             |
+| user            | 82.040&pm;0.907s          | 27.454&pm;0.130s                             |
+| sys             | 8.884&pm;0.244s           | 3.698&pm;0.054s                              |
 
 ### Synthesis CPU profiler
 

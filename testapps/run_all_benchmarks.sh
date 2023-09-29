@@ -79,3 +79,8 @@ cd testapp012
 ../run_benchmark.sh "npm run synth"
 ../run_benchmark.sh "npm run hotswap"
 cd ..
+
+cd testapp013
+../run_benchmark.sh "npm run synth"
+../run_benchmark.sh "npm run hotswap"
+cd ..

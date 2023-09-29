@@ -1,0 +1,31 @@
+{
+  "name": "testapp013",
+  "version": "0.1.0",
+  "bin": {
+    "testapp013": "bin/testapp013.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "synth": "cdk synth --quiet",
+    "synth-debug": "tsx bin/testapp013.ts",
+    "synth-profile": "CDK_OUTDIR=cdk.out node --loader tsx --prof --no-logfile-per-isolate bin/testapp013.ts && node --prof-process v8.log > v8log.txt",
+    "hotswap": "cdk deploy --hotswap-fallback --method=direct"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/node": "20.5.3",
+    "jest": "^29.6.3",
+    "ts-jest": "^29.1.1",
+    "aws-cdk": "2.93.0",
+    "tsx": "^3.13.0",
+    "typescript": "~5.1.6"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.93.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
+  }
+}

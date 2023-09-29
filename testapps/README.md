@@ -155,6 +155,13 @@ Profiler results can be found in `v8.log` and `v8log.txt` files.
 | user                           | 8.095&pm;0.056s  | 10.352&pm;0.094s  | 9.475&pm;0.077s      | 10.332&pm;0.147s        | 1.437&pm;0.031s  | 1.373&pm;0.033s   | 1.461&pm;0.032s      | 1.375&pm;0.022s         | 4.550&pm;0.141s | 1.375&pm;0.049s | 6.279&pm;0.070s | 4.061&pm;0.055s | 4.732&pm;0.049s | 1.686&pm;0.031s | 1.641&pm;0.019s | 1.691&pm;0.041s | 4.342&pm;0.026s | 4.615&pm;0.099s | 1.938&pm;0.037s |
 | sys                            | 0.864&pm;0.010s  | 1.254&pm;0.050s   | 0.941&pm;0.009s      | 1.194&pm;0.034s         | 0.226&pm;0.008s  | 0.233&pm;0.008s   | 0.238&pm;0.006s      | 0.235&pm;0.005s         | 0.487&pm;0.040s | 0.196&pm;0.024s | 0.928&pm;0.015s | 0.736&pm;0.027s | 0.522&pm;0.006s | 0.239&pm;0.010s | 0.242&pm;0.006s | 0.235&pm;0.012s | 0.436&pm;0.005s | 0.489&pm;0.024s | 0.289&pm;0.010s |
 
+**Observations**
+
+1. Assets staging and synthesis happen in CDK App. CDK CLI spawns child process where CDK App runs both.
+2. Neither asset staging nor synthesis algorithm is a bottleneck. They complete under 0.05s.
+3. Most time is lost in IPC call, spawning new Node process, loading and compiling Typescript code.
+4. For single deployment, the tax related to loading and compiling Typescript is not avoidable. It has to happen at some point of the process.
+
 #### Typescript vs Javascript
 
 ##### hotswap
@@ -173,6 +180,10 @@ Typescript vs Javascript, apps using CDK from NPM.
 | real                           | 4.699&pm;0.420s | 2.705&pm;0.227s |
 | user                           | 4.550&pm;0.141s | 1.375&pm;0.049s |
 | sys                            | 0.487&pm;0.040s | 0.196&pm;0.024s |
+
+**Observations**
+
+1. JS synthesis time is sub 0.5s from CDK CLI point of view. This indicates that compiling Typescript is main contributor to perceived synthesis speed in Typescript apps.
 
 #### CDK V1 vs V2
 
@@ -203,6 +214,10 @@ Typescript vs Javascript, apps using CDK from NPM.
 | real                           | 2.705&pm;0.227s         | 4.806&pm;0.066s         |
 | user                           | 1.375&pm;0.049s         | 4.061&pm;0.055s         |
 | sys                            | 0.196&pm;0.024s         | 0.736&pm;0.027s         |
+
+**Observations**
+
+1. CDK V1 was not a monolithic library. This experiment confirms that bundling CDK into single lib is not a problem.
 
 #### IPC vs no IPC single deployment
 
@@ -237,6 +252,11 @@ Typescript vs Javascript, apps using CDK from NPM.
 | real                           | 2.483&pm;0.127s     | 2.375&pm;0.171s        |
 | user                           | 1.437&pm;0.031s     | 1.373&pm;0.033s        |
 | sys                            | 0.226&pm;0.008s     | 0.233&pm;0.008s        |
+
+**Observations**
+
+1. For single deployment, the tax related to loading and compiling Typescript is not avoidable. It has to happen at some point of the process.
+2. Typescript benchmark is a bit skewed - we're also loading CDK CLI for testing purposes.
 
 #### CDK 2.93 vs 2.98
 
@@ -280,6 +300,10 @@ Evaluation of https://github.com/aws/aws-cdk/pull/27217
 | user                           | 1.375&pm;0.049s       | 1.686&pm;0.031s       |
 | sys                            | 0.196&pm;0.024s       | 0.239&pm;0.010s       |
 
+**Observation**
+
+1. Initial change caused regression. I.e. longer times.
+
 #### Different `ts-node` configurations
 
 This section compares different `ts-node` configurations suggested by https://typestrong.org/ts-node/docs/performance/.
@@ -307,6 +331,9 @@ This section compares different `ts-node` configurations suggested by https://ty
 | user                           | 1.375&pm;0.049s | 4.550&pm;0.141s                             | 1.641&pm;0.019s                                      | 1.691&pm;0.041s                                      | 4.342&pm;0.026s                                                    | 4.615&pm;0.099s                                     | 1.938&pm;0.037s                        |
 | sys                            | 0.196&pm;0.024s | 0.487&pm;0.040s                             | 0.242&pm;0.006s                                      | 0.235&pm;0.012s                                      | 0.436&pm;0.005s                                                    | 0.489&pm;0.024s                                     | 0.289&pm;0.010s                        |
 
+**Observation**
+
+1. Disabling type checking brings down IPC style synthesis to pure JS levels.
 
 ### Multiple deployments
 
@@ -334,6 +361,9 @@ This section compares different `ts-node` configurations suggested by https://ty
 | user            | 82.040&pm;0.907s          | 23.913&pm;0.338s                             |
 | sys             | 8.884&pm;0.244s           | 3.393&pm;0.084s                              |
 
+**Observations**
+
+1. Time saved by optimizing synthesis compounds when running multiple subsequent deployments that would only involve assets swaps.
 
 ### Typescript compiler diagnostics
 

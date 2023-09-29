@@ -36,6 +36,7 @@ const main = async () => {
         await fs.readFile(__filename);
         const args = process.argv.slice(2);
         if (i > 0) {
+            // In real life we'd do this if the watcher reports file that's not TS.
             args.push('--app');
             args.push('"npx ts-node --transpileOnly bin/testapp001.ts"');
         }

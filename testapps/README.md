@@ -106,6 +106,13 @@ This configuration disables type checking. https://github.com/esbuild-kit/tsx#do
 
 # Experiment results
 
+The benchmarks has been run in such a way:
+1. Fully deploy app to create stable state, i.e. to make "empty" hotswap attempts. (we focus on synthesis and asset processing here).
+2. Run benchmarks in a loop.
+3. Collect results.
+
+See `run_all_benchmarks.sh` and related scripts.
+
 ## Raw results
 
 Raw results can be seen in `summary.md` as well as partial `.md` files scattered in `testapps` directory.
@@ -318,16 +325,14 @@ This section compares different `ts-node` configurations suggested by https://ty
 
 #### Default vs no type checking in subsequent deployments.
 
-
-
 | Measurement     | testapp001 extra ipc many | testapp001 extra ipc many with transpileOnly |
 |-----------------|---------------------------|----------------------------------------------|
-| Synthesis time  | 4.473&pm;0.099s           | 1.146&pm;1.091s                              |
-| Deployment time | 0.668&pm;0.091s           | 2.361&pm;0.228s                              |
-| Total time      | 5.140&pm;0.134s           | 3.506&pm;1.129s                              |
-| real            | 69.657&pm;1.284s          | 53.192&pm;1.058s                             |
-| user            | 82.040&pm;0.907s          | 27.454&pm;0.130s                             |
-| sys             | 8.884&pm;0.244s           | 3.698&pm;0.054s                              |
+| Synthesis time  | 4.473&pm;0.099s           | 1.148&pm;1.075s                              |
+| Deployment time | 0.668&pm;0.091s           | 0.233&pm;0.035s                              |
+| Total time      | 5.140&pm;0.134s           | 1.380&pm;1.079s                              |
+| real            | 69.657&pm;1.284s          | 30.865&pm;0.614s                             |
+| user            | 82.040&pm;0.907s          | 23.913&pm;0.338s                             |
+| sys             | 8.884&pm;0.244s           | 3.393&pm;0.084s                              |
 
 ### Synthesis CPU profiler
 

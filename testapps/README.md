@@ -531,6 +531,49 @@ Heaviest call paths
 
 ![image testapp004](./testapp004/testapp004_synth_flame_graph.png)
 
+# Improvements to pursue
+
+## Minimize type checking
+
+The results indicate that major bottleneck is in TypeScript compilation. In a watch mode initial deployment should have type checking included.
+However, subsequent deployment may skip type checking if no relevant TypeScript file has been modified.
+
+An alternative is to check types in background and report the results. However, we should likely not proceed with deployment
+if program does not compile.
+
+This has potential to save 2-3 seconds on subsequent deploys where only assets changed.
+
+## Optimize IPC calls
+
+A chain of IPC calls between CLIs seems to incur up to 1s of extra latency. This is spent in booting NodeJS process
+and loading libraries (aws-cdk-lib is quite heavy).
+
+### When calling CDK CLI
+
+It seems that CLI does have programmatic interface in two forms:
+1. High level package (alpha) https://github.com/aws/aws-cdk/blob/26d4afee04ef2f5b17d0c211c767adc635d2cf37/packages/%40aws-cdk/cli-lib-alpha/lib/cli.ts#L93-L132
+2. Low level API exposed from `aws-cdk` https://github.com/aws/aws-cdk/blob/a367d91ea677c7b06f42c80f50d49749f11ee46a/packages/aws-cdk/lib/index.ts#L2
+
+### When calling synthesis
+
+Additional opportunity exists in keeping customer's CDK app in memory and re-use it for synthesis on asset mutations.
+Possible implementations are:
+1. The `aws-cdk` CLI could accept in memory CDK app (alpha package seems to do something like that).
+2. Outside watcher could call `app.synth` and run CDK CLI with `--app` parameter pointing to cloud assembly.
+3. `cdk.App` spawned in separate process could become `daemon` and listen to signals to re-synthesise assembly.
+
+This approach introduces a problem - how do we re-load customer's code if they touch TypeScript file.
+NodeJS caches modules in memory. Depending on type of library (CJS vs ESM) re-loading customer's program might be impossible 
+without re-spawning a process.
+
+# Conclusion
+
+We should optimize how much do we employ type checking and skip it in certain situations as this seems to be straightforward
+and yields handful of seconds savings.
+
+Removing IPC calls should be left for later and considered carefully as it appears to be much more complex to implement
+but only yields sub 1s savings.
+
 # Resources
 
 1. CDK team load time improvement PRs

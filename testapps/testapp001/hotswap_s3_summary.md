@@ -24,9 +24,9 @@ Record of this experiment can be found in commit list of https://github.com/sobo
 
 Resources:
 
-https://docs.aws.amazon.com/lambda/latest/operatorguide/computing-power.html
-https://stackoverflow.com/questions/66522916/aws-lambda-memory-vs-cpu-configuration
-https://aws.amazon.com/about-aws/whats-new/2020/12/aws-lambda-supports-10gb-memory-6-vcpu-cores-lambda-functions/
-https://github.com/aws/aws-cdk/issues/7950
-https://www.reddit.com/r/aws/comments/10l2fep/aws_cli_in_lambda_custom_runtime_is_inexplicably/
-https://stackoverflow.com/questions/52605924/aws-cli-s3-cp-performance-is-painfully-slow
+1. https://docs.aws.amazon.com/lambda/latest/operatorguide/computing-power.html
+2. https://stackoverflow.com/questions/66522916/aws-lambda-memory-vs-cpu-configuration
+3. https://aws.amazon.com/about-aws/whats-new/2020/12/aws-lambda-supports-10gb-memory-6-vcpu-cores-lambda-functions/
+4. https://github.com/aws/aws-cdk/issues/7950
+5. https://www.reddit.com/r/aws/comments/10l2fep/aws_cli_in_lambda_custom_runtime_is_inexplicably/
+6. https://stackoverflow.com/questions/52605924/aws-cli-s3-cp-performance-is-painfully-slow

@@ -1,0 +1,71 @@
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.196s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.036s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.109s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.007s
+
+
+✨  Testapp001Stack all import: 0.152s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.191s
+
+
+✨  Testapp001 all import: 0.389s
+
+
+✨  Testapp001Stack ctor minus super(): 0.018s
+
+
+✨  Stage.synth(): 0.038s
+
+
+✨  Testapp001 total processing time: 0.448s
+
+
+✨  Testapp001 processing time no imports: 0.059s
+
+
+✨  execProgram npx ts-node bin/testapp001.ts: 4.812s
+
+
+✨  Synthesis time: 4.82s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack:  start: Building b1f1d5817098091e0506707f97ec31e1de31f7cbafd860eaa7fa5dc10556e46e:current_account-current_region
+Testapp001Stack:  success: Built b1f1d5817098091e0506707f97ec31e1de31f7cbafd860eaa7fa5dc10556e46e:current_account-current_region
+Testapp001Stack:  start: Publishing b1f1d5817098091e0506707f97ec31e1de31f7cbafd860eaa7fa5dc10556e46e:current_account-current_region
+Testapp001Stack:  success: Published b1f1d5817098091e0506707f97ec31e1de31f7cbafd860eaa7fa5dc10556e46e:current_account-current_region
+Testapp001Stack: deploying... [1/1]
+
+✨ hotswapping resources:
+   ✨ Contents of S3 Bucket 'testapp001stack-testbuckete6e05abe-1l7fx6mfuk03f'
+✨ Contents of S3 Bucket 'testapp001stack-testbuckete6e05abe-1l7fx6mfuk03f' hotswapped!
+
+ ✅  Testapp001Stack
+
+✨  Deployment time: 9.91s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/30372ac0-6715-11ee-869b-021f3204e55f
+
+✨  Total time: 14.74s
+
+

@@ -7,6 +7,7 @@ All samples taken by:
 4. Executing `npx cdk deploy --hotswap-fallback --method=direct` (in table below)
 
 Verbose logs are in `hotswap_s3_log_XX_XX.txt` files.
+Record of this experiment can be found in commit list of https://github.com/sobolk/aws-cdk/pull/2 .
 
 | Memory  (MB)  | Deployment time (hotswap) |
 |---------------|---------------------------|

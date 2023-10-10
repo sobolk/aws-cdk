@@ -1,4 +1,8 @@
+# Overview
+
 This is a measurement of how performance of s3 deployment resource changes with memory setting.
+
+# Data
 
 All samples taken by:
 1. Adjusting memory settings
@@ -25,7 +29,30 @@ Record of this experiment can be found in commit list of https://github.com/sobo
 | 10240         | 3.34s                     | 2475ms                 | $412.70                               |
 
 
-Resources:
+# Observations
+
+1. The asset used for tests is light, 3 files, in range of 350-400 Bytes when zipped which is much less than standard
+   buffer size used by http clients (4kB or 8kB). Therefore, it shows that inefficiencies are present in 
+   s3 deployment lambda implementation, i.e. using Python and delegating to AWS CLI also written in python and demanding
+   resources.
+2. When using default lambda settings, i.e. 128 MB, the lambda seems to be running into deep garbage collection cycles.
+   In other runs reported memory usage stabilized around 136MB. This explains why latency on 128MB is so large comparing to other samples.
+3. Past 512, the processing logic seems to benefit from additional cores (AWS CLI may attempt to upload 3 files in parallel).
+4. Performance levels out past 2048. (Remember this is baseline demand given small asset size).
+5. Incurred cost remains at similar level until performance gain levels out.
+6. There seems to be constant ~1s difference between lambda execution and reported hotswap deployment duration.
+7. Lambda latency even after optimization is not satisfactory given asset size. The IPC calls to AWS CLI to
+   fetch asset zip and then synchronize it with bucket both take ~1-2s respectively. Which takes fractions of seconds if
+   executed in the same process via SDK calls.
+
+# Opportunities for improvements
+
+1. Tweak memory settings (this can be done on CDK caller side).
+2. Eliminate IPC calls in s3 deployment bucket (there are articles on the Internet indicating successful attempts
+   to load AWS CLI as library, both lambda and AWS CLI are written in python).
+3. Eliminate lambda call from hotswap logic and upload asset directly to target bucket from local workspace.
+
+# Resources
 
 1. https://docs.aws.amazon.com/lambda/latest/operatorguide/computing-power.html
 2. https://stackoverflow.com/questions/66522916/aws-lambda-memory-vs-cpu-configuration

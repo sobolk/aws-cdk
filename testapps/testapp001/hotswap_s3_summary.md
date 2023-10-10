@@ -14,6 +14,7 @@ Record of this experiment can be found in commit list of https://github.com/sobo
 | 128 (default) | 38.48s                    | $80.37                                |
 | 512           | 9.91s                     | $82.78                                |
 | 1024          | 5.36s                     | $89.53                                |
+| 2048          | 3.44s                     | $114.87                               |
 | 3008          | 3.18s                     | $155.89                               |
 | 3009          | 3.44s                     | $168.67                               |
 | 5307          | 3.41s                     | $294.75                               |

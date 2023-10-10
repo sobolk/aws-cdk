@@ -23,6 +23,7 @@ Record of this experiment can be found in commit list of https://github.com/sobo
 
 
 Resources:
+
 https://docs.aws.amazon.com/lambda/latest/operatorguide/computing-power.html
 https://stackoverflow.com/questions/66522916/aws-lambda-memory-vs-cpu-configuration
 https://aws.amazon.com/about-aws/whats-new/2020/12/aws-lambda-supports-10gb-memory-6-vcpu-cores-lambda-functions/

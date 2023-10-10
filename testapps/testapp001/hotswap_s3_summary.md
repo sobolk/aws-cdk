@@ -1,9 +1,12 @@
+This is a measurement of how performance of s3 deployment resource changes with memory setting.
 
 All samples taken by:
 1. Adjusting memory settings
 2. Executing `npx cdk deploy` to stabilize
 3. Editing `c.txt` file by appending content (to make sure new asset hash is generated)
 4. Executing `npx cdk deploy --hotswap-fallback --method=direct` (in table below)
+
+Verbose logs are in `hotswap_s3_log_XX_XX.txt` files.
 
 | Memory  (MB)  | Deployment time (hotswap) |
 |---------------|---------------------------|

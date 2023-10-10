@@ -32,7 +32,7 @@ export class Testapp001Stack extends cdk.Stack {
     new s3deploy.BucketDeployment(this, 'DeployFiles', {
       sources: [s3deploy.Source.asset('./some_files')],
       destinationBucket: bucket,
-      memoryLimit: 7076,
+      memoryLimit: 8845,
     });
 
     new lambda.Function(this, 'lambda1', {

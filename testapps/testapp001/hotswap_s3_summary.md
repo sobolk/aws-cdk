@@ -10,19 +10,19 @@ Verbose logs are in `hotswap_s3_log_XX_XX.txt` files.
 Cloudwatch logs can be found in `hotswap_s3_cloudwatch_logs.md` file.
 Record of this experiment can be found in commit list of https://github.com/sobolk/aws-cdk/pull/2 .
 
-| Memory  (MB)  | Deployment time (hotswap) | Estimated cost of 1000000 invocations |
-|---------------|---------------------------|---------------------------------------|
-| 128 (default) | 38.48s                    | $80.37                                |
-| 512           | 9.91s                     | $82.78                                |
-| 1024          | 5.36s                     | $89.53                                |
-| 1536          | 3.67s                     | $91.95                                |
-| 2048          | 3.44s                     | $114.87                               |
-| 3008          | 3.18s                     | $155.89                               |
-| 3009          | 3.44s                     | $168.67                               |
-| 5307          | 3.41s                     | $294.75                               |
-| 7076          | 3.4s                      | $391.78                               |
-| 8845          | 3.08s                     | $443.60                               |
-| 10240         | 3.34s                     | $556.87                               |
+| Memory  (MB)  | Deployment time (hotswap) | Billed Lambda Duration | Estimated cost of 1000000 invocations |
+|---------------|---------------------------|------------------------|---------------------------------------|
+| 128 (default) | 38.48s                    | 37608ms                | $78.55                                |
+| 512           | 9.91s                     | 8984ms                 | $75.07                                |
+| 1024          | 5.36s                     | 4396ms                 | $73.47                                |
+| 1536          | 3.67s                     | 2779ms                 | $69.68                                |
+| 2048          | 3.44s                     | 2551ms                 | $85.23                                |
+| 3008          | 3.18s                     | 2167ms                 | $106.29                               |
+| 3009          | 3.44s                     | 2520ms                 | $123.62                               |
+| 5307          | 3.41s                     | 2492ms                 | $215.45                               |
+| 7076          | 3.4s                      | 2475ms                 | $285.24                               |
+| 8845          | 3.08s                     | 2204ms                 | $317.49                               |
+| 10240         | 3.34s                     | 2475ms                 | $412.70                               |
 
 
 Resources:

@@ -48,8 +48,12 @@ Record of this experiment can be found in commit list of https://github.com/sobo
 # Opportunities for improvements
 
 1. Tweak memory settings (this can be done on CDK caller side).
-2. Eliminate IPC calls in s3 deployment bucket (there are articles on the Internet indicating successful attempts
-   to load AWS CLI as library, both lambda and AWS CLI are written in python).
+2. ~~Eliminate IPC calls in s3 deployment bucket (there are articles on the Internet indicating successful attempts
+   to load AWS CLI as library, both lambda and AWS CLI are written in python).~~ This appears to be not feasible due to:
+   1. `AwsCliLayer` seems to be using old CLI through v1 CDK , see (here)[https://github.com/aws/aws-cdk/blob/73f256dda9cf434f3727004225223fe0919503d6/packages/aws-cdk-lib/lambda-layer-awscli/lib/awscli-layer.ts#L1]. Following this reference reveals CLI version `1.27.165` at the time of writing this.
+   2. Loading CLI requires file system lookup, i.e. additional coupling between s3 deployment lambda and layer.
+   3. AWS CLI v2 distribution seems to bundle python distro and its code into single binary, i.e. there's nothing to load from file system to python program. Which means this option won't work with latest AWS CLI.
+   4. AWS CLI S3 encapsulates data transfer features that are not found in other libraries.
 3. Eliminate lambda call from hotswap logic and upload asset directly to target bucket from local workspace.
 
 # Resources

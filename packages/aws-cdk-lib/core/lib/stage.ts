@@ -211,13 +211,16 @@ export class Stage extends Construct {
    * calls will return the same assembly.
    */
   public synth(options: StageSynthesisOptions = { }): cxapi.CloudAssembly {
+    const startTime = new Date().getTime();
     if (!this.assembly || options.force) {
       this.assembly = synthesize(this, {
         skipValidation: options.skipValidation,
         validateOnSynthesis: options.validateOnSynthesis,
       });
     }
-
+    const elapsedTime = new Date().getTime() - startTime;
+    // eslint-disable-next-line no-console
+    console.log('\n✨  Stage.synth(): %ss\n', elapsedTime/1000);
     return this.assembly;
   }
 

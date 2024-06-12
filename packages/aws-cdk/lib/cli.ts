@@ -760,8 +760,14 @@ function determineHotswapMode(hotswap?: boolean, hotswapFallback?: boolean, watc
   return hotswapMode;
 }
 
-export function cli(args: string[] = process.argv.slice(2)) {
-  exec(args)
+// This is a hack.
+// Proper solution is to create programmatic API equivalent to CLI
+// and allow passing an app instance from the caller.
+export let CDK_APP_HACK: any;
+
+export async function cli(args: string[] = process.argv.slice(2), cdkApp?: any) {
+  CDK_APP_HACK = cdkApp;
+  await exec(args)
     .then(async (value) => {
       if (typeof value === 'number') {
         process.exitCode = value;

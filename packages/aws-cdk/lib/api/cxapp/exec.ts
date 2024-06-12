@@ -5,6 +5,7 @@ import * as cxschema from '@aws-cdk/cloud-assembly-schema';
 import * as cxapi from '@aws-cdk/cx-api';
 import * as fs from 'fs-extra';
 import * as semver from 'semver';
+import { CDK_APP_HACK } from '../../cli';
 import { debug, warning } from '../../logging';
 import { Configuration, PROJECT_CONFIG, USER_DEFAULTS } from '../../settings';
 import { loadTree, some } from '../../tree';
@@ -82,7 +83,23 @@ export async function execProgram(aws: SdkProvider, config: Configuration): Prom
     env[cxapi.CONTEXT_OVERFLOW_LOCATION_ENV] = contextOverflowLocation;
   }
 
-  await exec(commandLine.join(' '));
+  if (CDK_APP_HACK) {
+    const startTime = new Date().getTime();
+    for (const envKey in env) {
+      // This is a hack instead of plumbing proper props to app or synth.
+      process.env[envKey] = env[envKey];
+    }
+    CDK_APP_HACK.synth({ force: true });
+    const elapsedTime = new Date().getTime() - startTime;
+    // eslint-disable-next-line no-console
+    console.log('\n✨  CDK_APP_HACK.synth(): %ss\n', elapsedTime / 1000);
+  } else {
+    const startTime = new Date().getTime();
+    await exec(commandLine.join(' '));
+    const elapsedTime = new Date().getTime() - startTime;
+    // eslint-disable-next-line no-console
+    console.log('\n✨  execProgram %s: %ss\n', commandLine.join(' '), elapsedTime / 1000);
+  }
 
   const assembly = createAssembly(outdir);
 

@@ -1,0 +1,290 @@
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.253s
+
+
+✨  Testapp002Stack ctor minus super(): 0.014s
+
+
+✨  Stage.synth(): 0.035s
+
+
+✨  Testapp002 total processing time: 0.303s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.364s
+
+
+real 0.99
+user 0.96
+sys 0.17
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.254s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.304s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.361s
+
+
+real 0.99
+user 0.97
+sys 0.17
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.114s
+
+
+✨  Testapp002 all require(): 0.257s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.307s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.369s
+
+
+real 1.01
+user 0.98
+sys 0.18
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.114s
+
+
+✨  Testapp002 all require(): 0.26s
+
+
+✨  Testapp002Stack ctor minus super(): 0.014s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.309s
+
+
+✨  Testapp002 processing time no imports: 0.049s
+
+
+✨  execProgram node bin/testapp002.js: 0.371s
+
+
+real 1.00
+user 0.98
+sys 0.17
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.113s
+
+
+✨  Testapp002 all require(): 0.255s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.305s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.356s
+
+
+real 0.98
+user 0.97
+sys 0.17
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.12s
+
+
+✨  Testapp002 all require(): 0.276s
+
+
+✨  Testapp002Stack ctor minus super(): 0.015s
+
+
+✨  Stage.synth(): 0.038s
+
+
+✨  Testapp002 total processing time: 0.332s
+
+
+✨  Testapp002 processing time no imports: 0.056s
+
+
+✨  execProgram node bin/testapp002.js: 0.389s
+
+
+real 1.03
+user 1.01
+sys 0.18
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.111s
+
+
+✨  Testapp002 all require(): 0.256s
+
+
+✨  Testapp002Stack ctor minus super(): 0.014s
+
+
+✨  Stage.synth(): 0.035s
+
+
+✨  Testapp002 total processing time: 0.306s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.365s
+
+
+real 1.00
+user 0.98
+sys 0.17
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.11s
+
+
+✨  Testapp002 all require(): 0.255s
+
+
+✨  Testapp002Stack ctor minus super(): 0.014s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.305s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.369s
+
+
+real 0.99
+user 0.97
+sys 0.17
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.112s
+
+
+✨  Testapp002 all require(): 0.256s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.306s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.367s
+
+
+real 0.99
+user 0.97
+sys 0.17
+
+> testapp002@0.1.0 synth-extra-ipc
+> node bin/testapp002.extra-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.11s
+
+
+✨  Testapp002 all require(): 0.253s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.302s
+
+
+✨  Testapp002 processing time no imports: 0.049s
+
+
+✨  execProgram node bin/testapp002.js: 0.354s
+
+
+real 0.98
+user 0.96
+sys 0.17

@@ -1,0 +1,370 @@
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.179s
+
+
+✨  Testapp006 all require(): 0.3s
+
+
+✨  Testapp006Stack ctor minus super(): 0.019s
+
+
+✨  Testapp006 total processing time: 0.372s
+
+
+✨  Testapp006 processing time no imports: 0.072s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.15
+user 3.82
+sys 0.74
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.112s
+
+
+✨  Testapp006 all require(): 0.19s
+
+
+✨  Testapp006Stack ctor minus super(): 0.015s
+
+
+✨  Testapp006 total processing time: 0.255s
+
+
+✨  Testapp006 processing time no imports: 0.065s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.01
+user 3.79
+sys 0.71
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.112s
+
+
+✨  Testapp006 all require(): 0.188s
+
+
+✨  Testapp006Stack ctor minus super(): 0.015s
+
+
+✨  Testapp006 total processing time: 0.253s
+
+
+✨  Testapp006 processing time no imports: 0.065s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 3.97
+user 3.72
+sys 0.70
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.113s
+
+
+✨  Testapp006 all require(): 0.189s
+
+
+✨  Testapp006Stack ctor minus super(): 0.016s
+
+
+✨  Testapp006 total processing time: 0.258s
+
+
+✨  Testapp006 processing time no imports: 0.069s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 3.99
+user 3.79
+sys 0.71
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.109s
+
+
+✨  Testapp006 all require(): 0.186s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.248s
+
+
+✨  Testapp006 processing time no imports: 0.062s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 4.00
+user 3.78
+sys 0.74
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.109s
+
+
+✨  Testapp006 all require(): 0.184s
+
+
+✨  Testapp006Stack ctor minus super(): 0.015s
+
+
+✨  Testapp006 total processing time: 0.248s
+
+
+✨  Testapp006 processing time no imports: 0.064s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 3.97
+user 3.72
+sys 0.71
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.106s
+
+
+✨  Testapp006 all require(): 0.185s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.248s
+
+
+✨  Testapp006 processing time no imports: 0.063s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 3.95
+user 3.75
+sys 0.72
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.111s
+
+
+✨  Testapp006 all require(): 0.189s
+
+
+✨  Testapp006Stack ctor minus super(): 0.016s
+
+
+✨  Testapp006 total processing time: 0.255s
+
+
+✨  Testapp006 processing time no imports: 0.066s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 3.93
+user 3.68
+sys 0.71
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.107s
+
+
+✨  Testapp006 all require(): 0.177s
+
+
+✨  Testapp006Stack ctor minus super(): 0.013s
+
+
+✨  Testapp006 total processing time: 0.241s
+
+
+✨  Testapp006 processing time no imports: 0.064s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 3.90
+user 3.71
+sys 0.68
+
+> testapp006@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp006Stack all require(): 0.11s
+
+
+✨  Testapp006 all require(): 0.185s
+
+
+✨  Testapp006Stack ctor minus super(): 0.014s
+
+
+✨  Testapp006 total processing time: 0.249s
+
+
+✨  Testapp006 processing time no imports: 0.064s
+
+
+NOTICES
+
+19836	AWS CDK v1 End-of-Support June 1, 2023
+
+	Overview: AWS CDK v1 is currently in maintenance mode. Support for AWS
+	          CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK
+	          v2 to continue to get the latest features and fixes!
+
+	Affected versions: framework: 1.*, cli: 1.*
+
+	More information at: https://github.com/aws/aws-cdk/issues/19836
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 19836".
+real 3.91
+user 3.70
+sys 0.69

@@ -5,6 +5,8 @@
   "bin": {
     "cdk": "bin/cdk"
   },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "cdk-build",
     "watch": "cdk-watch",

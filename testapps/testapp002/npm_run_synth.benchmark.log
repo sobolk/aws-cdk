@@ -1,0 +1,290 @@
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.114s
+
+
+✨  Testapp002 all require(): 0.266s
+
+
+✨  Testapp002Stack ctor minus super(): 0.014s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.318s
+
+
+✨  Testapp002 processing time no imports: 0.052s
+
+
+✨  execProgram node bin/testapp002.js: 0.377s
+
+
+real 0.98
+user 0.97
+sys 0.18
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.118s
+
+
+✨  Testapp002 all require(): 0.264s
+
+
+✨  Testapp002Stack ctor minus super(): 0.015s
+
+
+✨  Stage.synth(): 0.036s
+
+
+✨  Testapp002 total processing time: 0.317s
+
+
+✨  Testapp002 processing time no imports: 0.053s
+
+
+✨  execProgram node bin/testapp002.js: 0.378s
+
+
+real 0.99
+user 0.96
+sys 0.18
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.113s
+
+
+✨  Testapp002 all require(): 0.257s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.033s
+
+
+✨  Testapp002 total processing time: 0.307s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.358s
+
+
+real 0.96
+user 0.95
+sys 0.18
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.113s
+
+
+✨  Testapp002 all require(): 0.261s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.036s
+
+
+✨  Testapp002 total processing time: 0.314s
+
+
+✨  Testapp002 processing time no imports: 0.053s
+
+
+✨  execProgram node bin/testapp002.js: 0.375s
+
+
+real 0.97
+user 0.96
+sys 0.18
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.115s
+
+
+✨  Testapp002 all require(): 0.265s
+
+
+✨  Testapp002Stack ctor minus super(): 0.014s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.315s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.382s
+
+
+real 0.98
+user 0.96
+sys 0.18
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.112s
+
+
+✨  Testapp002 all require(): 0.256s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.306s
+
+
+✨  Testapp002 processing time no imports: 0.049s
+
+
+✨  execProgram node bin/testapp002.js: 0.365s
+
+
+real 0.96
+user 0.95
+sys 0.18
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.255s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.035s
+
+
+✨  Testapp002 total processing time: 0.306s
+
+
+✨  Testapp002 processing time no imports: 0.051s
+
+
+✨  execProgram node bin/testapp002.js: 0.373s
+
+
+real 0.97
+user 0.95
+sys 0.17
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.11s
+
+
+✨  Testapp002 all require(): 0.259s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.035s
+
+
+✨  Testapp002 total processing time: 0.31s
+
+
+✨  Testapp002 processing time no imports: 0.051s
+
+
+✨  execProgram node bin/testapp002.js: 0.361s
+
+
+real 0.95
+user 0.95
+sys 0.17
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.251s
+
+
+✨  Testapp002Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  Testapp002 total processing time: 0.301s
+
+
+✨  Testapp002 processing time no imports: 0.05s
+
+
+✨  execProgram node bin/testapp002.js: 0.359s
+
+
+real 0.95
+user 0.95
+sys 0.17
+
+> testapp002@0.1.0 synth
+> cdk synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.116s
+
+
+✨  Testapp002 all require(): 0.262s
+
+
+✨  Testapp002Stack ctor minus super(): 0.014s
+
+
+✨  Stage.synth(): 0.036s
+
+
+✨  Testapp002 total processing time: 0.315s
+
+
+✨  Testapp002 processing time no imports: 0.052s
+
+
+✨  execProgram node bin/testapp002.js: 0.383s
+
+
+real 0.97
+user 0.95
+sys 0.17

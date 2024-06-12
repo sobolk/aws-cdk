@@ -1,0 +1,24 @@
+{
+  "name": "testapp004",
+  "version": "0.1.0",
+  "bin": {
+    "testapp004": "bin/testapp004.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest",
+    "synth": "cdk synth --quiet",
+    "synth-debug": "node bin/testapp004.js",
+    "synth-profile": "CDK_OUTDIR=cdk.out node --prof --no-logfile-per-isolate bin/testapp004.js && node --prof-process v8.log > v8log.txt",
+    "hotswap": "cdk deploy --hotswap-fallback --method=direct"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.93.0",
+    "jest": "^29.6.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.93.0",
+    "constructs": "^10.0.0"
+  }
+}

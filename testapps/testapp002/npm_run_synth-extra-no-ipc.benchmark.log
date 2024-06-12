@@ -1,0 +1,290 @@
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.235s
+
+
+✨  Testapp002Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.032s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+
+✨  Testapp002 total processing time: 0.369s
+
+
+✨  Testapp002 processing time no imports: 0.134s
+
+real 0.87
+user 0.88
+sys 0.16
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.234s
+
+
+✨  Testapp002Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+
+✨  Testapp002 total processing time: 0.365s
+
+
+✨  Testapp002 processing time no imports: 0.13s
+
+real 0.87
+user 0.89
+sys 0.16
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.237s
+
+
+✨  Testapp002Stack ctor minus super(): 0.035s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+
+✨  Testapp002 total processing time: 0.369s
+
+
+✨  Testapp002 processing time no imports: 0.132s
+
+real 0.88
+user 0.89
+sys 0.16
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.242s
+
+
+✨  Testapp002Stack ctor minus super(): 0.036s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Testapp002 total processing time: 0.376s
+
+
+✨  Testapp002 processing time no imports: 0.134s
+
+real 0.88
+user 0.90
+sys 0.16
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.111s
+
+
+✨  Testapp002 all require(): 0.236s
+
+
+✨  Testapp002Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+
+✨  Testapp002 total processing time: 0.368s
+
+
+✨  Testapp002 processing time no imports: 0.132s
+
+real 0.87
+user 0.89
+sys 0.16
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.11s
+
+
+✨  Testapp002 all require(): 0.238s
+
+
+✨  Testapp002Stack ctor minus super(): 0.037s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+
+✨  Testapp002 total processing time: 0.371s
+
+
+✨  Testapp002 processing time no imports: 0.133s
+
+real 0.88
+user 0.90
+sys 0.17
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.11s
+
+
+✨  Testapp002 all require(): 0.24s
+
+
+✨  Testapp002Stack ctor minus super(): 0.038s
+
+
+✨  Stage.synth(): 0.033s
+
+
+✨  CDK_APP_HACK.synth(): 0.033s
+
+
+
+✨  Testapp002 total processing time: 0.378s
+
+
+✨  Testapp002 processing time no imports: 0.138s
+
+real 0.90
+user 0.91
+sys 0.17
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.113s
+
+
+✨  Testapp002 all require(): 0.245s
+
+
+✨  Testapp002Stack ctor minus super(): 0.039s
+
+
+✨  Stage.synth(): 0.033s
+
+
+✨  CDK_APP_HACK.synth(): 0.033s
+
+
+
+✨  Testapp002 total processing time: 0.39s
+
+
+✨  Testapp002 processing time no imports: 0.145s
+
+real 0.91
+user 0.91
+sys 0.18
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.119s
+
+
+✨  Testapp002 all require(): 0.256s
+
+
+✨  Testapp002Stack ctor minus super(): 0.037s
+
+
+✨  Stage.synth(): 0.033s
+
+
+✨  CDK_APP_HACK.synth(): 0.034s
+
+
+
+✨  Testapp002 total processing time: 0.402s
+
+
+✨  Testapp002 processing time no imports: 0.146s
+
+real 0.91
+user 0.92
+sys 0.18
+
+> testapp002@0.1.0 synth-extra-no-ipc
+> node bin/testapp002.extra-no-ipc.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.116s
+
+
+✨  Testapp002 all require(): 0.254s
+
+
+✨  Testapp002Stack ctor minus super(): 0.039s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Testapp002 total processing time: 0.391s
+
+
+✨  Testapp002 processing time no imports: 0.137s
+
+real 0.95
+user 0.94
+sys 0.18

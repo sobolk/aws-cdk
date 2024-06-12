@@ -1,0 +1,543 @@
+Statistical profiling result from v8.log, (998 ticks, 7 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     24    2.4%          /usr/lib/system/libsystem_c.dylib
+     14    1.4%          /usr/lib/system/libsystem_malloc.dylib
+     13    1.3%          /usr/lib/system/libsystem_pthread.dylib
+      5    0.5%          /usr/lib/libc++.1.dylib
+      2    0.2%          /usr/lib/system/libsystem_kernel.dylib
+      1    0.1%          /usr/lib/system/libsystem_platform.dylib
+      1    0.1%          /usr/lib/libc++abi.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      2    0.2%    0.2%  LazyCompile: *normalizeString node:path:66:25
+      1    0.1%    0.1%  Function: ^updateChildren node:internal/modules/cjs/loader:206:24
+      1    0.1%    0.1%  Function: ^handleErrorFromBinding node:internal/fs/utils:346:32
+      1    0.1%    0.1%  Function: ^getOwnPropertyValueOrDefault node:internal/validators:227:38
+      1    0.1%    0.1%  Function: ^getOptions node:internal/fs/utils:320:20
+      1    0.1%    0.1%  Function: ^Module node:internal/modules/cjs/loader:225:16
+
+ [C++]:
+   ticks  total  nonlib   name
+    868   87.0%   92.5%  t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+     23    2.3%    2.5%  T _proc_track_dirty
+      8    0.8%    0.9%  T _kdebug_typefilter
+      5    0.5%    0.5%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      4    0.4%    0.4%  T _host_request_notification
+      3    0.3%    0.3%  t _udec
+      3    0.3%    0.3%  t _posix_spawn_appendportaction_np
+      2    0.2%    0.2%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      2    0.2%    0.2%  t __simple_asl_connect_once
+      2    0.2%    0.2%  T _mach_vm_allocate
+      1    0.1%    0.1%  t _uprv_compareInvAscii_73
+      1    0.1%    0.1%  T _ulocimp_toLanguageTag_73
+      1    0.1%    0.1%  T _semaphore_destroy
+      1    0.1%    0.1%  T _res_countArrayItems_73
+
+ [Summary]:
+   ticks  total  nonlib   name
+      7    0.7%    0.7%  JavaScript
+    924   92.6%   98.5%  C++
+     12    1.2%    1.3%  GC
+     60    6.0%          Shared libraries
+      7    0.7%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    864   94.8%   86.6%  t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+     20    2.2%    2.0%  T _proc_track_dirty
+      8    0.9%    0.8%  T _kdebug_typefilter
+      5    0.5%    0.5%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      3    0.3%    0.3%  t _posix_spawn_appendportaction_np
+      2    0.2%    0.2%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      2    0.2%    0.2%  t _udec
+      2    0.2%    0.2%  t __simple_asl_connect_once
+      2    0.2%    0.2%  T _host_request_notification
+      1    0.1%    0.1%  t _uprv_compareInvAscii_73
+      1    0.1%    0.1%  T _ulocimp_toLanguageTag_73
+      1    0.1%    0.1%  T _res_countArrayItems_73
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    868   87.0%  t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+    306   35.3%    Function: ^internalCompileFunction node:internal/vm:31:33
+    305   99.7%      Function: ^wrapSafe node:internal/modules/cjs/loader:1154:18
+    305  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+    297   97.4%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+    195   65.7%            Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+    102   34.3%            LazyCompile: ~require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      8    2.6%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      8  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+    195   22.5%    LazyCompile: ~Script node:vm:64:14
+    195  100.0%      LazyCompile: ~_moduleCompile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/v8-compile-cache-lib/v8-compile-cache.js:207:17
+    195  100.0%        LazyCompile: ~_ownModuleCompile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/v8-compile-cache-lib/v8-compile-cache.js:157:31
+    195  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+    195  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+     88   10.1%    Function: ^readSync node:fs:708:18
+     86   97.7%      Function: ^tryReadSync node:fs:447:21
+     86  100.0%        Function: ^readFileSync node:fs:468:22
+     83   96.5%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+     71   85.5%            Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+     12   14.5%            LazyCompile: ~require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      3    3.5%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      3  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      2    2.3%      LazyCompile: ~contentFingerprintMiss /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/fs/fingerprint.js:2:2239
+      2  100.0%        LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/fs/fingerprint.js:2:2128
+      2  100.0%          LazyCompile: ~obtain /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/cache.js:1:168
+      2  100.0%            LazyCompile: ~contentFingerprint /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/fs/fingerprint.js:2:1887
+     27    3.1%    Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+     21   77.8%      Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+     12   57.1%        Function: ~<anonymous> node:repl:1:1
+     12  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+     12  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:265:25
+      2    9.5%        Function: ~<anonymous> node:child_process:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+      2  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:265:25
+      1    4.8%        LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      1  100.0%          LazyCompile: ~get node:crypto:369:8
+      1  100.0%            t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      1    4.8%        LazyCompile: ~lazyLoadStreams node:fs:3010:25
+      1  100.0%          LazyCompile: ~get ReadStream node:fs:3155:17
+      1  100.0%            t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      1    4.8%        LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:534:29
+      1  100.0%          LazyCompile: ~setupUserModules node:internal/process/pre_execution:112:26
+      1  100.0%            LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1    4.8%        Function: ~<anonymous> node:worker_threads:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:265:25
+      1    4.8%        Function: ~<anonymous> node:module:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+      1  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:265:25
+      1    4.8%        Function: ~<anonymous> node:internal/child_process:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+      1  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1    4.8%        Function: ~<anonymous> node:assert:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:265:25
+      4   14.8%      LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:265:25
+      4  100.0%        Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:52:27
+      4  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:888:24
+      4  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1135:36
+      2    7.4%      Function: ^compileForPublicLoader node:internal/bootstrap/loaders:265:25
+      2  100.0%        Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:52:27
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:888:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1135:36
+     25    2.9%    LazyCompile: ~transformSync /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/@swc/core/index.js:228:18
+     17   68.0%      LazyCompile: ~transformSync /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/@swc/core/index.js:347:23
+     13   76.5%        LazyCompile: ~createSwcOptions /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/transpilers/swc.js:101:26
+     13  100.0%          LazyCompile: ~create /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/transpilers/swc.js:4:16
+     13  100.0%            LazyCompile: ~createTranspiler /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:250:38
+      4   23.5%        LazyCompile: ~createVariant /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/transpilers/swc.js:155:27
+      4  100.0%          LazyCompile: ~createSwcOptions /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/transpilers/swc.js:101:26
+      4  100.0%            LazyCompile: ~create /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/transpilers/swc.js:4:16
+      8   32.0%      Function: ^transformSync /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/@swc/core/index.js:347:23
+      7   87.5%        LazyCompile: ~transpile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/transpilers/swc.js:36:23
+      7  100.0%          LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:664:16
+      7  100.0%            LazyCompile: ~compile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:712:21
+      1   12.5%        LazyCompile: ~createVariant /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/transpilers/swc.js:155:27
+      1  100.0%          LazyCompile: ~createSwcOptions /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/transpilers/swc.js:101:26
+      1  100.0%            LazyCompile: ~create /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/transpilers/swc.js:4:16
+     20    2.3%    Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      3   15.0%      Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      3  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      3  100.0%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      3  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      3   15.0%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      3  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      3  100.0%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      3  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      2   10.0%      LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:534:29
+      2  100.0%        LazyCompile: ~setupUserModules node:internal/process/pre_execution:112:26
+      2  100.0%          LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      2  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      2   10.0%      Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      2  100.0%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      2  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      2   10.0%      Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      2  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      2  100.0%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      2  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      2   10.0%      Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      2  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      2  100.0%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      2  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1    5.0%      LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    5.0%      LazyCompile: ~initializeSourceMapsHandlers node:internal/process/pre_execution:573:38
+      1  100.0%        LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    5.0%      Function: ~<anonymous> node:net:1:1
+      1  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1    5.0%      Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1  100.0%          LazyCompile: ~initializeSourceMapsHandlers node:internal/process/pre_execution:573:38
+      1  100.0%            LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1    5.0%      Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1    5.0%      Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%            Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+     16    1.8%    t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      3   18.8%      t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      2   66.7%        Function: ^stat node:internal/modules/cjs/loader:180:14
+      2  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:584:28
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:986:35
+      1   33.3%        Function: ^readPackage node:internal/modules/cjs/loader:364:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:406:26
+      1  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:526:17
+      3   18.8%      Function: ^readPackage node:internal/modules/cjs/loader:364:21
+      3  100.0%        Function: ^readPackageScope node:internal/modules/cjs/loader:406:26
+      2   66.7%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      2  100.0%            Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      1   33.3%          Function: ^trySelf node:internal/modules/cjs/loader:526:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:986:35
+      2   12.5%      LazyCompile: *realpathSync node:fs:2577:22
+      2  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:478:20
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:469:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:485:23
+      1    6.3%      LazyCompile: ~src/services/codefixes/disableJsDiagnostics.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:152133:53
+      1  100.0%        Function: ^__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%          LazyCompile: ~src/services/_namespaces/ts.codefix.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:154035:45
+      1  100.0%            Function: ^__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1    6.3%      LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:410:36
+      1  100.0%        LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:517:30
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:517:30
+      1  100.0%            LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:623:31
+      1    6.3%      LazyCompile: ~parse /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/util.js:170:19
+      1  100.0%        LazyCompile: ~versionGteLt /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/util.js:155:22
+      1  100.0%          LazyCompile: ~createFromPreloadedConfig /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:151:35
+      1  100.0%            LazyCompile: ~create /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:145:16
+      1    6.3%      LazyCompile: ~parse /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/semver/classes/comparator.js:34:9
+      1  100.0%        LazyCompile: ~Comparator /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/semver/classes/comparator.js:8:15
+      1  100.0%          Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/semver/ranges/subset.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1    6.3%      Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cx-api/lib/features.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      1  100.0%            Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      1    6.3%      Function: ^stat node:internal/modules/cjs/loader:180:14
+      1  100.0%        Function: ^Module._findPath node:internal/modules/cjs/loader:584:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:986:35
+      1  100.0%            Function: ^Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/@cspotcode/source-map-support/source-map-support.js:792:96
+      1    6.3%      Function: ^readPackageScope node:internal/modules/cjs/loader:406:26
+      1  100.0%        Function: ^trySelf node:internal/modules/cjs/loader:526:17
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:986:35
+      1  100.0%            LazyCompile: ~Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/@cspotcode/source-map-support/source-map-support.js:792:96
+      1    6.3%      Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      1  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:888:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:1135:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:119:31
+      9    1.0%    LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      9  100.0%      LazyCompile: ~src/compiler/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:126093:37
+      9  100.0%        LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      9  100.0%          LazyCompile: ~src/typescript/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:171639:39
+      9  100.0%            LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+
+     24    2.4%  /usr/lib/system/libsystem_c.dylib
+      4   16.7%    Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/region-info/lib/index.js:1:1
+      4  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      4  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      4  100.0%          Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      4  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      1    4.2%    LazyCompile: ~toRealPath node:internal/modules/cjs/loader:478:20
+      1  100.0%      LazyCompile: ~tryFile node:internal/modules/cjs/loader:469:17
+      1  100.0%        LazyCompile: ~finalizeEsmResolution node:internal/modules/cjs/loader:1083:31
+      1  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:557:24
+      1  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:584:28
+      1    4.2%    LazyCompile: ~synthesize /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:765
+      1  100.0%      LazyCompile: ~synth /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/stage.js:1:1758
+      1  100.0%        LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/app.js:1:1439
+      1  100.0%          LazyCompile: ~onceWrapper node:events:623:21
+      1  100.0%            LazyCompile: ~emit node:domain:478:44
+      1    4.2%    LazyCompile: ~resolve /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/lazy.js:1:3827
+      1  100.0%      LazyCompile: ~resolve /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/lazy.js:1:4456
+      1  100.0%        LazyCompile: ~resolveToken /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/resolvable.js:1:874
+      1  100.0%          LazyCompile: ~resolveToken /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/resolve.js:1:3862
+      1  100.0%            LazyCompile: ~resolve /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/resolve.js:1:520
+      1    4.2%    LazyCompile: ~patchProcessObject node:internal/process/pre_execution:126:28
+      1  100.0%      LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.2%    LazyCompile: ~onwrite node:internal/streams/writable:428:17
+      1  100.0%      LazyCompile: ~afterWriteDispatched node:internal/stream_base_commons:155:30
+      1  100.0%        LazyCompile: ~writeGeneric node:internal/stream_base_commons:147:22
+      1  100.0%          LazyCompile: ~Socket._writeGeneric node:net:900:42
+      1  100.0%            LazyCompile: ~Socket._write node:net:942:35
+      1    4.2%    LazyCompile: ~internalRequire node:internal/modules/cjs/loader:166:25
+      1  100.0%      LazyCompile: ~Module._preloadModules node:internal/modules/cjs/loader:1414:34
+      1  100.0%        LazyCompile: ~loadPreloadModules node:internal/process/pre_execution:589:28
+      1  100.0%          LazyCompile: ~setupUserModules node:internal/process/pre_execution:112:26
+      1  100.0%            LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1    4.2%    LazyCompile: ~initializeState /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:28806:33
+      1  100.0%      LazyCompile: ~parseJsonText2 /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:28724:32
+      1  100.0%        LazyCompile: ~parseJsonText /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:27905:25
+      1  100.0%          LazyCompile: ~parseConfigFileTextToJson /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:35873:37
+      1  100.0%            LazyCompile: ~readConfigFile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:35869:26
+      1    4.2%    LazyCompile: ~getResourceNameAttribute /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/resource.js:1:3145
+      1  100.0%      LazyCompile: ~Bucket /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-s3/lib/bucket.js:1:17720
+      1  100.0%        LazyCompile: ~Testapp009Stack /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/lib/testapp009-stack.ts:31:16
+      1  100.0%          Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/bin/testapp009.ts:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1    4.2%    LazyCompile: ~getRegularExpressionForWildcard /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:18274:43
+      1  100.0%      LazyCompile: ~getWildcardDirectories /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:37059:34
+      1  100.0%        LazyCompile: ~parseJsonConfigFileContentWorker /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:36420:44
+      1  100.0%          LazyCompile: ~parseJsonConfigFileContent /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:36375:38
+      1  100.0%            LazyCompile: ~readConfig /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/configuration.js:83:20
+      1    4.2%    LazyCompile: ~get cfnProperties /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-s3/lib/s3.generated.js:1:12988
+      1  100.0%      LazyCompile: ~_toCloudFormation /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/cfn-resource.js:1:6217
+      1  100.0%        LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/refs.js:1:3678
+      1  100.0%          LazyCompile: ~findTokens /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/resolve.js:1:3526
+      1  100.0%            LazyCompile: ~findAllReferences /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/refs.js:1:3504
+      1    4.2%    LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%      LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1  100.0%        LazyCompile: ~refresh node:internal/util/colors:25:10
+      1  100.0%          Function: ~<anonymous> node:internal/util/colors:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+      1    4.2%    LazyCompile: ~basename node:path:1305:11
+      1  100.0%      LazyCompile: ~findLongestRegisteredExtension node:internal/modules/cjs/loader:498:40
+      1  100.0%        LazyCompile: ~Module.load node:internal/modules/cjs/loader:1107:33
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:888:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1135:36
+      1    4.2%    LazyCompile: ~_toCloudFormation /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/cfn-resource.js:1:6217
+      1  100.0%      LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/refs.js:1:3678
+      1  100.0%        LazyCompile: ~findTokens /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/resolve.js:1:3526
+      1  100.0%          LazyCompile: ~findAllReferences /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/refs.js:1:3504
+      1  100.0%            LazyCompile: ~resolveReferences /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/refs.js:1:699
+      1    4.2%    LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%      LazyCompile: ~src/compiler/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:126093:37
+      1  100.0%        LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%          LazyCompile: ~src/typescript/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:171639:39
+      1  100.0%            LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1    4.2%    LazyCompile: ~ValidatorResult /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/helpers.js:33:73
+      1  100.0%      LazyCompile: ~validateAdditionalProperties /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/attribute.js:373:73
+      1  100.0%        LazyCompile: ~validateSchema /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/validator.js:163:62
+      1  100.0%          LazyCompile: ~validateProperties /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/attribute.js:262:53
+      1  100.0%            LazyCompile: ~validateSchema /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/validator.js:163:62
+      1    4.2%    LazyCompile: ~CloudAssembly /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cx-api/lib/cloud-assembly.js:1:712
+      1  100.0%      LazyCompile: ~buildAssembly /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cx-api/lib/cloud-assembly.js:1:5507
+      1  100.0%        LazyCompile: ~synthesize /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:765
+      1  100.0%          LazyCompile: ~synth /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/stage.js:1:1758
+      1  100.0%            LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/app.js:1:1439
+      1    4.2%    Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/fs/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      1  100.0%          Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      1    4.2%    Function: ^__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%      LazyCompile: ~src/services/_namespaces/ts.codefix.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:154035:45
+      1  100.0%        Function: ^__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%          LazyCompile: ~src/services/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:169160:37
+      1  100.0%            Function: ^__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+
+     23    2.3%  T _proc_track_dirty
+      2    8.7%    LazyCompile: ~retry /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/graceful-fs/graceful-fs.js:397:16
+      2  100.0%      LazyCompile: ~resetQueue /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/graceful-fs/graceful-fs.js:383:21
+      2  100.0%        LazyCompile: ~closeSync /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/graceful-fs/graceful-fs.js:72:24
+      2  100.0%          Function: ^readFileSync node:fs:468:22
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      2    8.7%    Function: ^__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1   50.0%      LazyCompile: ~src/services/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:169160:37
+      1  100.0%        Function: ^__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%          LazyCompile: ~src/typescript/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:171639:39
+      1  100.0%            LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1   50.0%      LazyCompile: ~src/compiler/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:126093:37
+      1  100.0%        LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%          LazyCompile: ~src/typescript/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:171639:39
+      1  100.0%            LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1    4.3%    t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      1  100.0%      LazyCompile: ~src/compiler/commandLineParser.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:37208:40
+      1  100.0%        LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%          LazyCompile: ~src/compiler/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:126093:37
+      1  100.0%            LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1    4.3%    LazyCompile: ~yn /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/util.js:15:12
+      1  100.0%      Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1107:33
+      1    4.3%    LazyCompile: ~value node:internal/console/constructor:340:20
+      1  100.0%      LazyCompile: ~log node:internal/console/constructor:379:6
+      1  100.0%        t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      1  100.0%          Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/lib/testapp009-stack.ts:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1    4.3%    LazyCompile: ~validateAnyOf /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/attribute.js:86:43
+      1  100.0%      Function: ^validateSchema /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/validator.js:163:62
+      1  100.0%        Function: ^validateProperties /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/attribute.js:262:53
+      1  100.0%          Function: ^validateSchema /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/validator.js:163:62
+      1  100.0%            Function: ^validateSchema /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/validator.js:163:62
+      1    4.3%    LazyCompile: ~validate /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cloud-assembly-schema/lib/manifest.js:1:2470
+      1  100.0%      LazyCompile: ~saveManifest /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cloud-assembly-schema/lib/manifest.js:3:26
+      1  100.0%        LazyCompile: ~saveAssemblyManifest /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cloud-assembly-schema/lib/manifest.js:1:701
+      1  100.0%          LazyCompile: ~buildAssembly /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cx-api/lib/cloud-assembly.js:1:5507
+      1  100.0%            LazyCompile: ~synthesize /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:765
+      1    4.3%    LazyCompile: ~setupPerfHooks node:internal/process/pre_execution:372:24
+      1  100.0%      LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.3%    LazyCompile: ~get /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/lib/index.js:1:273
+      1  100.0%      LazyCompile: ~Testapp009Stack /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/lib/testapp009-stack.ts:31:16
+      1  100.0%        Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/bin/testapp009.ts:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%            LazyCompile: ~m._compile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:854:31
+      1    4.3%    LazyCompile: ~attemptRequireWithV8CompileCache /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/util.js:93:42
+      1  100.0%      LazyCompile: ~loadCompiler /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/configuration.js:236:22
+      1  100.0%        LazyCompile: ~resolveAndLoadCompiler /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/configuration.js:224:32
+      1  100.0%          LazyCompile: ~findAndReadConfig /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/configuration.js:42:27
+      1  100.0%            LazyCompile: ~create /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:145:16
+      1    4.3%    LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%      LazyCompile: ~src/compiler/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:126093:37
+      1  100.0%        LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1  100.0%          LazyCompile: ~src/typescript/_namespaces/ts.ts /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:171639:39
+      1  100.0%            LazyCompile: ~__init /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:21:43
+      1    4.3%    LazyCompile: ~__exportStar /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-ssm/index.js:1:429
+      1  100.0%      Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-ssm/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      1  100.0%            Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      1    4.3%    LazyCompile: ~SingletonFunction /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/lib/singleton-lambda.js:1:391
+      1  100.0%      LazyCompile: ~BucketDeployment /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-s3-deployment/lib/bucket-deployment.js:1:786
+      1  100.0%        LazyCompile: ~Testapp009Stack /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/lib/testapp009-stack.ts:31:16
+      1  100.0%          Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/bin/testapp009.ts:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1    4.3%    LazyCompile: ~DockerImage /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/bundling.js:1:4361
+      1  100.0%      LazyCompile: ~fromRegistry /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/bundling.js:1:4312
+      1  100.0%        LazyCompile: ~Runtime /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/lib/runtime.js:1:721
+      1  100.0%          Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/lib/runtime.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1    4.3%    LazyCompile: ~Bucket /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-s3/lib/bucket.js:1:17720
+      1  100.0%      LazyCompile: ~Testapp009Stack /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/lib/testapp009-stack.ts:31:16
+      1  100.0%        Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/bin/testapp009.ts:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%            LazyCompile: ~m._compile /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:854:31
+      1    4.3%    Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%      Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1  100.0%        Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1  100.0%          Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1    4.3%    Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/region-info/lib/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      1  100.0%          Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      1    4.3%    Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      1  100.0%          Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+
+     14    1.4%  /usr/lib/system/libsystem_malloc.dylib
+      4   28.6%    t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      2   50.0%      LazyCompile: *realpathSync node:fs:2577:22
+      2  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:478:20
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:469:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:485:23
+      1   25.0%      t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      1  100.0%        Function: ^stat node:internal/modules/cjs/loader:180:14
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:584:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:986:35
+      1   25.0%      LazyCompile: ~generateStackId /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/stack.js:1:19990
+      1  100.0%        LazyCompile: ~generateStackName /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/stack.js:1:19606
+      1  100.0%          LazyCompile: ~Stack /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/stack.js:1:2146
+      1  100.0%            LazyCompile: ~Testapp009Stack /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/lib/testapp009-stack.ts:31:16
+      1    7.1%    LazyCompile: ~validate /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-iam/lib/policy.js:1:2010
+      1  100.0%      Function: ^validate /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/constructs/lib/construct.js:319:13
+      1  100.0%        LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:2:3638
+      1  100.0%          Function: ^visit /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:4:222
+      1  100.0%            Function: ^visit /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:4:222
+      1    7.1%    LazyCompile: ~scanIdentifier /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:10688:28
+      1  100.0%      LazyCompile: ~scan /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:10218:18
+      1  100.0%        LazyCompile: ~nextTokenWithoutCheck /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:29150:39
+      1  100.0%          LazyCompile: ~nextToken /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:29157:27
+      1  100.0%            LazyCompile: ~parseExpected /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:29233:31
+      1    7.1%    LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    7.1%    LazyCompile: ~joinArgs /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist-raw/node-internal-errors.js:22:18
+      1  100.0%      Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist-raw/node-internal-errors.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+      1    7.1%    LazyCompile: ~get /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-iam/lib/index.js:1:273
+      1  100.0%      LazyCompile: ~Function /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/lib/function.js:1:5819
+      1  100.0%        LazyCompile: ~Testapp009Stack /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/lib/testapp009-stack.ts:31:16
+      1  100.0%          Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/bin/testapp009.ts:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1    7.1%    LazyCompile: ~convertCfnFunctionPropsToCloudFormation /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/lib/lambda.generated.js:1:88335
+      1  100.0%      LazyCompile: ~renderProperties /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/lib/lambda.generated.js:1:66027
+      1  100.0%        LazyCompile: ~Resources /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/cfn-resource.js:1:7051
+      1  100.0%          Function: ^postProcess /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/util.js:1:1541
+      1  100.0%            Function: ^postProcess /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/resolve.js:1:979
+      1    7.1%    LazyCompile: ~calculateCacheKey /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/asset-staging.js:2:2701
+      1  100.0%      LazyCompile: ~AssetStaging /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/asset-staging.js:1:915
+      1  100.0%        LazyCompile: ~Asset /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-s3-assets/lib/asset.js:1:456
+      1  100.0%          LazyCompile: ~bind /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/lib/code.js:1:4594
+      1  100.0%            LazyCompile: ~LayerVersion /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/aws-lambda/lib/layers.js:1:1620
+      1    7.1%    Function: ~<anonymous> node:dgram:1:1
+      1  100.0%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+      1  100.0%        Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1  100.0%          Function: ~<anonymous> node:internal/child_process:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+
+     13    1.3%  /usr/lib/system/libsystem_pthread.dylib
+      2   15.4%    LazyCompile: ~toRealPath node:internal/modules/cjs/loader:478:20
+      2  100.0%      LazyCompile: ~tryFile node:internal/modules/cjs/loader:469:17
+      2  100.0%        LazyCompile: ~finalizeEsmResolution node:internal/modules/cjs/loader:1083:31
+      2  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:557:24
+      2  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:584:28
+      1    7.7%    t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      1  100.0%      Function: ~<anonymous> node:domain:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:320:27
+      1  100.0%          Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1  100.0%            Function: ~<anonymous> node:repl:1:1
+      1    7.7%    LazyCompile: ~validate /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/node_modules/jsonschema/lib/validator.js:108:50
+      1  100.0%      LazyCompile: ~validate /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cloud-assembly-schema/lib/manifest.js:1:2470
+      1  100.0%        LazyCompile: ~saveManifest /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cloud-assembly-schema/lib/manifest.js:3:26
+      1  100.0%          LazyCompile: ~saveAssemblyManifest /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cloud-assembly-schema/lib/manifest.js:1:701
+      1  100.0%            LazyCompile: ~buildAssembly /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/cx-api/lib/cloud-assembly.js:1:5507
+      1    7.7%    LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    7.7%    LazyCompile: ~extend /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:954:18
+      1  100.0%      LazyCompile: ~parseJsonConfigFileContentWorker /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:36420:44
+      1  100.0%        LazyCompile: ~parseJsonConfigFileContent /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/typescript/lib/typescript.js:36375:38
+      1  100.0%          LazyCompile: ~readConfig /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/configuration.js:83:20
+      1  100.0%            LazyCompile: ~findAndReadConfig /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/configuration.js:42:27
+      1    7.7%    LazyCompile: ~assertEncoding node:internal/fs/utils:155:24
+      1  100.0%      LazyCompile: ~getOptions node:internal/fs/utils:320:20
+      1  100.0%        LazyCompile: ~readFileSync node:fs:468:22
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1107:33
+      1    7.7%    LazyCompile: ~Readable node:internal/streams/readable:186:18
+      1  100.0%      LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%        LazyCompile: ~Socket node:net:339:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:84:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1    7.7%    LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/cfn-resource.js:4:127
+      1  100.0%      t std::__1::__tree<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::__map_value_compare<v8::internal::ConstantPoolKey, std::__1::__value_type<v8::internal::ConstantPoolKey, int>, std::__1::less<v8::internal::ConstantPoolKey>, true>, std::__1::allocator<std::__1::__value_type<v8::internal::ConstantPoolKey, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<v8::internal::ConstantPoolKey, int>, void*>*)
+      1  100.0%        LazyCompile: ~renderDependsOn /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/cfn-resource.js:4:81
+      1  100.0%          LazyCompile: ~_toCloudFormation /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/cfn-resource.js:1:6217
+      1  100.0%            LazyCompile: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/core/lib/private/refs.js:1:3678
+      1    7.7%    Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%      Function: ^requireBuiltin node:internal/bootstrap/loaders:357:24
+      1  100.0%        LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:534:29
+      1  100.0%          LazyCompile: ~setupUserModules node:internal/process/pre_execution:112:26
+      1  100.0%            LazyCompile: ~prepareExecution node:internal/process/pre_execution:52:26
+      1    7.7%    Function: ~<anonymous> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/aws-cdk-lib/region-info/lib/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1210:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1265:37
+      1  100.0%          Function: ^require.extensions.<computed> /Users/sobkamil/git/aws-cdk-fork/testapps/testapp009/node_modules/ts-node/dist/index.js:849:40
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1107:33
+

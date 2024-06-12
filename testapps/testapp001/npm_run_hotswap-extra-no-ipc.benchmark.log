@@ -1,0 +1,700 @@
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.133s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.082s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.113s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.149s
+
+
+✨  Testapp001 all import: 0.283s
+
+
+✨  Testapp001Stack ctor minus super(): 0.034s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.64s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.68s
+
+
+
+✨  Testapp001 total processing time: 2.244s
+
+
+✨  Testapp001 processing time no imports: 1.961s
+
+real 8.42
+user 10.13
+sys 1.20
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.135s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.082s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.113s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.144s
+
+
+✨  Testapp001 all import: 0.28s
+
+
+✨  Testapp001Stack ctor minus super(): 0.029s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.62s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.66s
+
+
+
+✨  Testapp001 total processing time: 2.229s
+
+
+✨  Testapp001 processing time no imports: 1.949s
+
+real 8.47
+user 10.22
+sys 1.22
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.14s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.033s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.084s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.122s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.155s
+
+
+✨  Testapp001 all import: 0.295s
+
+
+✨  Testapp001Stack ctor minus super(): 0.031s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.63s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.67s
+
+
+
+✨  Testapp001 total processing time: 2.292s
+
+
+✨  Testapp001 processing time no imports: 1.997s
+
+real 8.51
+user 10.47
+sys 1.21
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.141s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.083s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.114s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.145s
+
+
+✨  Testapp001 all import: 0.287s
+
+
+✨  Testapp001Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.59s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.63s
+
+
+
+✨  Testapp001 total processing time: 2.514s
+
+
+✨  Testapp001 processing time no imports: 2.227s
+
+real 8.78
+user 10.38
+sys 1.21
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.146s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.027s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.088s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.12s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.152s
+
+
+✨  Testapp001 all import: 0.299s
+
+
+✨  Testapp001Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.032s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.61s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.65s
+
+
+
+✨  Testapp001 total processing time: 2.492s
+
+
+✨  Testapp001 processing time no imports: 2.193s
+
+real 8.75
+user 10.17
+sys 1.21
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.131s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0.001s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.026s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.087s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.119s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.155s
+
+
+✨  Testapp001 all import: 0.287s
+
+
+✨  Testapp001Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+✨  Synthesis time: 0.05s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.63s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.67s
+
+
+
+✨  Testapp001 total processing time: 2.29s
+
+
+✨  Testapp001 processing time no imports: 2.003s
+
+real 8.70
+user 10.63
+sys 1.25
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.141s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.031s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.081s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.118s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.149s
+
+
+✨  Testapp001 all import: 0.29s
+
+
+✨  Testapp001Stack ctor minus super(): 0.028s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.61s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.65s
+
+
+
+✨  Testapp001 total processing time: 2.34s
+
+
+✨  Testapp001 processing time no imports: 2.05s
+
+real 8.57
+user 10.36
+sys 1.19
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.133s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.031s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.081s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.117s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.148s
+
+
+✨  Testapp001 all import: 0.282s
+
+
+✨  Testapp001Stack ctor minus super(): 0.032s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.66s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.7s
+
+
+
+✨  Testapp001 total processing time: 2.19s
+
+
+✨  Testapp001 processing time no imports: 1.908s
+
+real 8.37
+user 10.34
+sys 1.14
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.139s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0.001s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.031s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.086s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.122s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.152s
+
+
+✨  Testapp001 all import: 0.292s
+
+
+✨  Testapp001Stack ctor minus super(): 0.028s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.62s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.66s
+
+
+
+✨  Testapp001 total processing time: 2.125s
+
+
+✨  Testapp001 processing time no imports: 1.833s
+
+real 8.36
+user 10.34
+sys 1.16
+
+> testapp001@0.1.0 hotswap-extra-no-ipc
+> ts-node bin/testapp001.extra-no-ipc.ts deploy --hotswap-fallback --method=direct
+
+
+✨  Testapp001 import 'source-map-support/register': 0s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.136s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.031s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.084s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.005s
+
+
+✨  Testapp001Stack all import: 0.12s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.15s
+
+
+✨  Testapp001 all import: 0.287s
+
+
+✨  Testapp001Stack ctor minus super(): 0.029s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+✨  Synthesis time: 0.04s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack: deploying... [1/1]
+
+ ✅  Testapp001Stack (no changes)
+
+✨  Deployment time: 0.63s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/c742bf50-526c-11ee-8397-0abec39f5709
+
+✨  Total time: 0.67s
+
+
+
+✨  Testapp001 total processing time: 2.235s
+
+
+✨  Testapp001 processing time no imports: 1.948s
+
+real 8.43
+user 10.28
+sys 1.15

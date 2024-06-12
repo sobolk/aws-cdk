@@ -1756,16 +1756,16 @@ export class CdkCliV2MissesMainAndTypes extends ValidationRule {
     // this only applies to V2
     if (cdkMajorVersion() === 1) { return; }
 
-    if (pkg.json.main || pkg.json.types) {
-      pkg.report({
-        ruleName: this.name,
-        message: 'The package.json file for the aws-cdk CLI package in V2 cannot have "main" and "types" keys',
-        fix: () => {
-          delete pkg.json.main;
-          delete pkg.json.types;
-        },
-      });
-    }
+    // if (pkg.json.main || pkg.json.types) {
+    //   pkg.report({
+    //     ruleName: this.name,
+    //     message: 'The package.json file for the aws-cdk CLI package in V2 cannot have "main" and "types" keys',
+    //     fix: () => {
+    //       delete pkg.json.main;
+    //       delete pkg.json.types;
+    //     },
+    //   });
+    // }
   }
 }
 

@@ -1,0 +1,920 @@
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.121s
+
+
+✨  Testapp002 all require(): 0.261s
+
+
+✨  Testapp002Stack ctor minus super(): 0.036s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.011s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Testapp002 total processing time: 0.54s
+
+
+✨  Testapp002 processing time no imports: 0.279s
+
+real 1.13
+user 1.19
+sys 0.22
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.114s
+
+
+✨  Testapp002 all require(): 0.244s
+
+
+✨  Testapp002Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.032s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Testapp002 total processing time: 0.522s
+
+
+✨  Testapp002 processing time no imports: 0.278s
+
+real 1.04
+user 1.17
+sys 0.20
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.114s
+
+
+✨  Testapp002 all require(): 0.249s
+
+
+✨  Testapp002Stack ctor minus super(): 0.034s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Testapp002 total processing time: 0.524s
+
+
+✨  Testapp002 processing time no imports: 0.275s
+
+real 1.04
+user 1.16
+sys 0.20
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.234s
+
+
+✨  Testapp002Stack ctor minus super(): 0.035s
+
+
+✨  Stage.synth(): 0.031s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.011s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Testapp002 total processing time: 0.511s
+
+
+✨  Testapp002 processing time no imports: 0.277s
+
+real 1.03
+user 1.15
+sys 0.20
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.11s
+
+
+✨  Testapp002 all require(): 0.236s
+
+
+✨  Testapp002Stack ctor minus super(): 0.034s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.031s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Testapp002 total processing time: 0.511s
+
+
+✨  Testapp002 processing time no imports: 0.275s
+
+real 1.02
+user 1.14
+sys 0.20
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.109s
+
+
+✨  Testapp002 all require(): 0.234s
+
+
+✨  Testapp002Stack ctor minus super(): 0.033s
+
+
+✨  Stage.synth(): 0.03s
+
+
+✨  CDK_APP_HACK.synth(): 0.03s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.006s
+
+
+
+✨  Testapp002 total processing time: 0.494s
+
+
+✨  Testapp002 processing time no imports: 0.26s
+
+real 1.03
+user 1.14
+sys 0.20
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.123s
+
+
+✨  Testapp002 all require(): 0.254s
+
+
+✨  Testapp002Stack ctor minus super(): 0.038s
+
+
+✨  Stage.synth(): 0.033s
+
+
+✨  CDK_APP_HACK.synth(): 0.033s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.011s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Testapp002 total processing time: 0.539s
+
+
+✨  Testapp002 processing time no imports: 0.285s
+
+real 1.05
+user 1.16
+sys 0.20
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.12s
+
+
+✨  Testapp002 all require(): 0.248s
+
+
+✨  Testapp002Stack ctor minus super(): 0.036s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  CDK_APP_HACK.synth(): 0.034s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.011s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.006s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Testapp002 total processing time: 0.545s
+
+
+✨  Testapp002 processing time no imports: 0.297s
+
+real 1.07
+user 1.18
+sys 0.21
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.126s
+
+
+✨  Testapp002 all require(): 0.27s
+
+
+✨  Testapp002Stack ctor minus super(): 0.041s
+
+
+✨  Stage.synth(): 0.032s
+
+
+✨  CDK_APP_HACK.synth(): 0.032s
+
+
+
+✨  Stage.synth(): 0.011s
+
+
+✨  CDK_APP_HACK.synth(): 0.011s
+
+
+
+✨  Stage.synth(): 0.009s
+
+
+✨  CDK_APP_HACK.synth(): 0.009s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Testapp002 total processing time: 0.565s
+
+
+✨  Testapp002 processing time no imports: 0.295s
+
+real 1.12
+user 1.21
+sys 0.23
+
+> testapp002@0.1.0 synth-extra-no-ipc-many
+> node bin/testapp002.extra-no-ipc-many-deployments.js synth --quiet
+
+
+✨  Testapp002Stack all require(): 0.117s
+
+
+✨  Testapp002 all require(): 0.249s
+
+
+✨  Testapp002Stack ctor minus super(): 0.04s
+
+
+✨  Stage.synth(): 0.034s
+
+
+✨  CDK_APP_HACK.synth(): 0.035s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.012s
+
+
+✨  CDK_APP_HACK.synth(): 0.012s
+
+
+
+✨  Stage.synth(): 0.01s
+
+
+✨  CDK_APP_HACK.synth(): 0.01s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.007s
+
+
+✨  CDK_APP_HACK.synth(): 0.007s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Stage.synth(): 0.008s
+
+
+✨  CDK_APP_HACK.synth(): 0.008s
+
+
+
+✨  Testapp002 total processing time: 0.549s
+
+
+✨  Testapp002 processing time no imports: 0.3s
+
+real 1.10
+user 1.19
+sys 0.23

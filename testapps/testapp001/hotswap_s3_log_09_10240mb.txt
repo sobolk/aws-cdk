@@ -1,0 +1,75 @@
+
+✨  Testapp001 import 'source-map-support/register': 0.001s
+
+
+✨  Testapp001 import * as cdk from 'aws-cdk-lib': 0.146s
+
+
+✨  Testapp001Stack import * as cdk from 'aws-cdk-lib': 0s
+
+
+✨  Testapp001Stack import { Construct } from 'constructs': 0s
+
+
+✨  Testapp001Stack import * as s3 from 'aws-cdk-lib/aws-s3': 0.029s
+
+
+✨  Testapp001Stack import * as lambda from 'aws-cdk-lib/aws-lambda': 0.079s
+
+
+✨  Testapp001Stack import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment': 0.004s
+
+
+✨  Testapp001Stack all import: 0.112s
+
+
+✨  Testapp001 import { Testapp001Stack } from '../lib/testapp001-stack': 0.143s
+
+
+✨  Testapp001 all import: 0.29s
+
+
+✨  Testapp001Stack ctor minus super(): 0.013s
+
+
+✨  Stage.synth(): 0.032s
+
+
+✨  Testapp001 total processing time: 0.338s
+
+
+✨  Testapp001 processing time no imports: 0.048s
+
+
+✨  execProgram npx ts-node bin/testapp001.ts: 4.19s
+
+
+✨  Synthesis time: 4.2s
+
+⚠️ The --hotswap and --hotswap-fallback flags deliberately introduce CloudFormation drift to speed up deployments
+⚠️ They should only be used for development - never use them for your production Stacks!
+
+Testapp001Stack:  start: Building 228f0390ade4b9264757e5a7f9cf392c94f6dc1f3f93b8db52f53ce85aa6f375:current_account-current_region
+Testapp001Stack:  success: Built 228f0390ade4b9264757e5a7f9cf392c94f6dc1f3f93b8db52f53ce85aa6f375:current_account-current_region
+Testapp001Stack:  start: Building 63369d86ca07ee2c11a438cd3b1b73497514692ef125c9194a6eed32821b6c79:current_account-current_region
+Testapp001Stack:  success: Built 63369d86ca07ee2c11a438cd3b1b73497514692ef125c9194a6eed32821b6c79:current_account-current_region
+Testapp001Stack:  start: Publishing 228f0390ade4b9264757e5a7f9cf392c94f6dc1f3f93b8db52f53ce85aa6f375:current_account-current_region
+Testapp001Stack:  start: Publishing 63369d86ca07ee2c11a438cd3b1b73497514692ef125c9194a6eed32821b6c79:current_account-current_region
+Testapp001Stack:  success: Published 228f0390ade4b9264757e5a7f9cf392c94f6dc1f3f93b8db52f53ce85aa6f375:current_account-current_region
+Testapp001Stack:  success: Published 63369d86ca07ee2c11a438cd3b1b73497514692ef125c9194a6eed32821b6c79:current_account-current_region
+Testapp001Stack: deploying... [1/1]
+
+✨ hotswapping resources:
+   ✨ Contents of S3 Bucket 'testapp001stack-testbuckete6e05abe-1l7fx6mfuk03f'
+✨ Contents of S3 Bucket 'testapp001stack-testbuckete6e05abe-1l7fx6mfuk03f' hotswapped!
+
+ ✅  Testapp001Stack
+
+✨  Deployment time: 3.34s
+
+Stack ARN:
+arn:aws:cloudformation:us-west-2:595032847868:stack/Testapp001Stack/30372ac0-6715-11ee-869b-021f3204e55f
+
+✨  Total time: 7.55s
+
+
